@@ -30,6 +30,7 @@ step 4
 eg.
 http://www.bitesheji.com/Admin!index
 
+![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/login.jpg)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/admin.jpg)
 
 
