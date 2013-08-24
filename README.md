@@ -31,7 +31,7 @@ step 4
 	
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/category/0.jpg)
 
-	How to display the at the front page
+	How to display at the front page
 	
 	eg. 
 	
@@ -50,7 +50,7 @@ step 4
 <h1>Publish your website</h1>
 Publish your website whith static pages. 
 
-Incremental release or Whole sit publish
+Incremental or whole publish
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/publish/0.jpg)
 
 
