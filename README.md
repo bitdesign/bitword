@@ -33,10 +33,13 @@ step 4
 
 	How to display the at the front page
 	
-	<h5> tarray($blocks[your position num]) </h5>
 	eg. 
-	<h5>tarray($blocks[1])</h5> will get the "New Articles" and "Opensource Projects" category.
-	<h5>tarray($blocks[9])</h5> will get the "Contact me" category.
+	
+	tarray($blocks[1]) 
+	will get the "New Articles" and "Opensource Projects" category.
+	
+	tarray($blocks[9]) 
+	will get the "Contact me" category.
 	
 <h1>Add a content</h1>
 
