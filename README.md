@@ -30,15 +30,12 @@ eg.
 http://www.yoursite.com/admin
 
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/login.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-list.png)
-
-
 <h1>3. Add a category</h1>
 	
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/category-edit.png)
 	
 <h1>4. Write an article</h1>
-
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-list.png)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-edit.png)
 
 <h1>3. Other</h1>
