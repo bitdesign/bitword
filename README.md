@@ -46,5 +46,5 @@ http://www.yoursite.com/admin
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/setting.png)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/theme.png)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/replies.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/backup.png
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/password.png
+![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/backup.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/password.png)
