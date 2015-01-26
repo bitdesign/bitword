@@ -1,6 +1,7 @@
 bitblog
 ======
 Aimed to be the best lightweight blog,it is based on pure mvc php,mysql and bootstrap.
+
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/BITBLOG1.png)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/BITBLOG2.png)
 
