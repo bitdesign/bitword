@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BITBLOG</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="BITBLOG" />
+<meta name="Description" content="This is a BITBLOG website !" />
+<link href="/view/template/base/css/show.css" rel="stylesheet" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+<script type="text/javascript" src="/view/template/base/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/view/template/base/js/bitslider.js"></script>
+<script type="text/javascript" src="/view/template/base/js/jquery.form.js"></script>
+<script type="text/javascript" src="/view/template/base/js/jquery.validate.js"></script>
+		<script type="text/javascript" src="/Count!addVisits?id=2"></script>
+		
+		<script language="javascript" type="text/javascript">
+			
+			$(document).ready(function(){
+
+			});
+			
+	
+		function topme(rep_id){
+			
+			$.post("/Reply!addTopCount",{"rep_id":rep_id},
+				function(data) { 
+					if(data == "true"){
+						location.reload();
+					}else{
+						alert("false");
+					}
+				},"html"
+			);
+		}
+		function doSubmit(){
+				if( $("#rep_ctx").val() == ''){
+					alert("请输入内容");
+					return;
+				}
+				if( $("#validationCode").val() == ''){
+					alert("请输入验证码");
+					return;
+				}
+				$.post("/Reply!save",$('#msgForm').formSerialize(),
+				function(data) { 
+					if(data == "true"){
+						location.reload();
+					}else if(data == "0"){
+						alert("请输入正确的验证码!");
+					}else if(data == "-1"){
+						alert("管理员已关闭回复功能!"); 
+					}else{
+						alert(data);
+					}
+				},"html"
+				);
+			}
+			
+			function getNewValCode(){
+				$('#vldCode ').attr("src",'/Validation!getCode?r='+ Math.random()); 
+			}
+			
+		</script>
+	</head>
+	<body>
+		﻿<div class="header">
+	<div class="logo">
+		<a href="/" style="background: url(/upload/logo.png) no-repeat;"></a>
+	</div>
+	<div class="nav topnav" id="topnav">
+		<a href="/index.html"><span>首页</span><span class="en">Protal</span></a>
+		<a href="http://www.bit1010.com"><span>官方网站</span><span class="en">BIT1010</span></a>
+		<a href="/admin!dashboard"><span>管理后台</span><span class="en">Console</span></a>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+
+
+
+		<div class="all">
+			<div class="content">
+						<div class="splitinfo">
+								<span><a href="index.html">网站首页</a></span><span><a style="background:#8BBF5D;">Defualt</a></span>
+						</div>
+						
+						<div class="content_left">
+								<h2 class="infoTitle">Welcome</h2>
+								<p class="infoTime">
+									发布时间:2015-01-21&nbsp;&nbsp;
+									编辑:admin&nbsp;&nbsp;
+									阅读(5)
+								</p>
+								<div class="infoCtx">
+									<p>									</p><p>Welcome to bitblog world!<br/></p><p><br/></p><p>								</p>								</div>
+								<p class="infoKey">
+									<span>关键词</span>:Welcome&nbsp;&nbsp;
+								</p>
+								
+								<div class="repliesDiv">
+									<div class="repliesBar reply">
+									评论
+								  </div>
+									<form id="myform" method="post" action="Home!info&id=2">
+										
+											<!-- end-->
+											 
+													<script language="JavaScript">
+				$(function(){
+						$("#navdiv a").click(function(){
+								clickId = $(this).attr("id");
+								var curNo = $("#skipValue").val();
+								if (typeof(clickId) == "undefined")  return;
+								else if(clickId=="pre")  clickId = parseInt(curNo)-1;
+								else if(clickId=="next") clickId = parseInt(curNo)+1;
+								$("#skipValue").attr("value",clickId);
+								$(this).parents("form").submit();
+						});
+					});
+			</script>
+
+			<style>
+				#navdiv a{
+					text-decoration:none; border:none; background:rgb(252,252,252);
+					height:20px; line-height:20px; float:left;padding:0 7px; margin:0 1px;display:block;
+				}
+			</style>
+			
+			<input name='oldPerPageCnt' type='hidden' value='10'/>
+			<input name='skipValue' id='skipValue' type='hidden' value="0"/>
+			
+			<div id="navdiv" style="float:right; margin:30px 30px 0 0;">
+								
+			</div>
+										</form>
+										<div class="clear"></div>
+								</div>
+								
+							
+								
+								<div class="repliesDiv">	
+									<form id="msgForm">
+										<input type="hidden" name="par_id" value="2"/>
+										<div style="height:100%;width:100%;">
+											<input type="hidden"   name="usr_name" value="default"/>
+										</div>
+																				<div style="width:100%;border:none;">
+											<textarea name="rep_ctx" id="rep_ctx" style="width:100%;height:100px;resize:none;"></textarea>
+										</div>
+										<div style="float:right;height:30px;">
+											<img src="/Validation!getCode" class="replyValCode" id="vldCode" onclick="getNewValCode()"/>
+											<input type="text" name="validationCode" id="validationCode" maxlength="4" class="replyValInput" value=""/>
+											<input type="button" onclick="doSubmit();" class="replybtn" value="留言"/>
+										</div>
+									</form>
+								</div>
+						</div><!--content_left-->
+
+						<div class="content_right">
+							<div class="news">
+		<h3><p>最新<span>文章</span></p></h3>
+		<ul class="rank">
+						</ul>
+		
+		<h3 class="ph"><p>点击<span>排行</span></p></h3>
+		<ul class="paih">
+							</ul>
+	
+		<h3><p>文章分类</p></h3>
+		<ul class="rank">
+								<li><a href="/base_b1.html" title="Defualt" target="_blank">Defualt (<label>1</label>)</a></li>
+						</ul>
+	</div><!--news-->						</div><!--content_right-->
+						
+						<div class="clear"></div>
+						
+				</div><!--content-->
+			</div><!--all-->
+			
+			<div class="footer">
+	<div class="copyright">
+		Powered by <a href="http://www.bit1010.com">BITBLOG v1.0</a><br/> 
+		Copyright &copy; 2013 BIT1010 All Rights Reserved <br/>
+			</div>
+</div>
+		</body>
+
+</html>
