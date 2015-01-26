@@ -11,17 +11,7 @@ Upload all files to your website and enter the install url
 	eg.
 	http://www.yoursite.com/install/
 	
-step 1
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install1.png)
-
-step 2
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install2.png)
-
-step 3
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install3.png)
-
-step 4
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install4.png)
 
 <h1>2. Write a blog article</h1>
 
