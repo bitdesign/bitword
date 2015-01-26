@@ -1,8 +1,8 @@
 bitblog
 ======
 Aimed to be the best lightweight blog,it is based on pure mvc php,mysql and bootstrap.
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/BITBLOG1.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/BITBLOG2.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/BITBLOG1.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/BITBLOG2.png)
 
 
 <h1>How to Install</h1> 
@@ -13,38 +13,38 @@ Upload all files to your website and enter the install url
 	http://www.yoursite.com/install/
 	
 step 1
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/Install1.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install1.png)
 
 step 2
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/Install2.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install2.png)
 
 step 3
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/Install3.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install3.png)
 
 step 4
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/Install4.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Install4.png)
 
 <h1>2. Write a blog article</h1>
 
 eg.
 http://www.yoursite.com/admin
 
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/login.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/content-list.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/login.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-list.png)
 
 
 <h1>3. Add a category</h1>
 	
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/category-edit.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/category-edit.png)
 	
 <h1>4. Write an article</h1>
 
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/content-edit.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-edit.png)
 
 <h1>3. Other</h1>
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/Console.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/setting.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/theme.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/replies.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/backup.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/imgs/password.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Console.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/setting.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/theme.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/replies.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/backup.png)
+![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/password.png)
