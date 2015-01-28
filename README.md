@@ -26,11 +26,3 @@ http://www.yoursite.com/admin
 <h1>4. Write an article</h1>
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-list.png)
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/content-edit.png)
-
-<h1>3. Other</h1>
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/Console.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/setting.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/theme.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/replies.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/backup.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/screenshots/password.png)
