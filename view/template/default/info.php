@@ -84,7 +84,7 @@
             <div class="panel-body">
                 
                 <!--<i class="fa fa-fw fa-map-marker"></i>-->
-                <?=$obj["content"]?> 
+                <?=stripslashes($obj["content"])?> 
                 <br/>
               
 
