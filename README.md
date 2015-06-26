@@ -8,7 +8,7 @@ BITCMS is a super lightweight blog software. Based on PHP+MySQL+Bootstrap+minima
 主要特色:
 <pre>
 1. 支持全站静态化
-2. 多语种
+2. 多语种(当前支持中文和英语)
 3. 文章分类
 4. 评论
 5. 自定义主题
@@ -27,7 +27,7 @@ Features:
 </pre>
 
 <h1>安装注意事项 - Install</h1> 
-
+<pre>
 First of all ,make sure your apache support .htaccess . 
 Nginx server please include the .htaccess_nginx to your nginx.conf .
 
@@ -35,9 +35,9 @@ Nginx server please include the .htaccess_nginx to your nginx.conf .
 如果您使用Nginx,请将目录中的.htaccess_nginx引入您的nginx.conf 。
 
 
-将所有文件上传到您的网站根目录,输入您的网站URL经过简单的2步即可完成安装。
-Upload all the files to your web site and enter your website url to begin install.
-
+将所有文件上传到您的网站根目录,输入您的网站URL开始安装,系统会根据您的浏览器自动选择安装语言。
+Upload all the files to your web site and enter your website url to begin install.The system will automatically choose the language based on your browser.
+</pre>
 <h1>快照 - Snapshot</h1> 
 
 ![Image text](https://github.com/bitdesign/bitcms/raw/master/snapshot/install.png)
