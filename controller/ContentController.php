@@ -120,11 +120,12 @@ class ContentController extends Controller{
 
 		$this->content->save();
 		
-		//if ( $_POST["sts"] == "1") {
+		if ( $_POST["sts"] == "1") {
 		    $adminController = new AdminController();
 		    $adminController->publishOne($_POST["id"],$_POST["block_id"]);
-		//}
-		
+	  }else{
+	      echo "true"; 
+		}
 		
 	}
 	
