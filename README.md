@@ -1,7 +1,7 @@
 BITCMS
 ======
 
-BITCMS是一款超轻量级博客程序(主程序不足1M）。基于PHP+MySQL+Bootstrap+极简主思想设计。
+BITCMS是一款超轻量级CMS(主程序不足1M）。基于PHP+MySQL+Bootstrap+极简主思想设计。
 
 BITCMS is a super lightweight blog software. Based on PHP+MySQL+Bootstrap+minimalist. 
 
