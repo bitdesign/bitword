@@ -72,7 +72,7 @@
                 function(data) {
                     if(data == "true"){
                         alert("<?=$tsuccess?>");
-                        location.href = "Content!listPage";
+                        //location.href = "Content!listPage";
                     }else{
                         //alert("<?=$tfailed?>");
                         alert(data);
