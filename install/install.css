@@ -1,0 +1,82 @@
+body{
+	background: url("images/bg.png") repeat scroll 0 0 transparent;
+    color: #333333;
+    font: 12px/1.5 Arial,Microsoft Yahei,Simsun;
+    margin:0px;
+    padding:0px;
+}
+.all{ width:750px;margin:0px auto;}
+
+.header {
+    
+    text-align:center;
+}
+ 
+.main{background:#fff;width:748px;padding:15px;}
+
+form div div{
+ 
+ margin: 5px 0 ;   
+
+}
+
+form span{
+ font-size:15px;
+ 
+}
+
+form label.error 
+{ 
+color:Red; 
+} 
+
+.pact {
+    border: none;
+    display: block;
+    font-size: 1.1em;
+    height: auto;
+    line-height: 1.5;
+    margin: 0 auto 22px;
+    outline: medium none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:#fff;
+    padding: 10px;
+    width: 660px;
+}
+pre {white-space: pre-wrap;word-break: normal;word-wrap: break-word;}
+
+.button{
+ 
+ margin:0 0 20px 30px!important;   
+}
+
+
+
+
+em{font-style: normal;}
+table {	width:650px;margin:0 auto 20px auto;border-collapse: collapse;border-spacing: 0;}
+td{height:40px; line-height:40px;}
+td, th {word-break: break-all; word-wrap: break-word; padding:0px 0px 0px 15px;}
+
+table input[type=text]{
+    width:200px;    
+}
+
+form label{
+ 
+ font-weight:normal!important; 
+ font-size:16px;  
+ margin:20px 0 10px 0;
+}
+
+.logo{
+	float:left;
+	width:400px;
+	height:70px;
+	margin-top:10px;
+	background:url(upload/logo.png) no-repeat;
+	overflow:hidden;
+	height: 80px;
+    margin-left:30px;
+}
