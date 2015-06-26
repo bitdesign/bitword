@@ -117,7 +117,9 @@ class ContentController extends Controller{
 		}
 		
 		$_POST["content_short"] = plainSubText($_POST["content"],200);
-
+    
+    $_POST["content"]= addslashes($_POST["content"]);
+    
 		$this->content->save();
 		
 		if ( $_POST["sts"] == "1") {
@@ -132,6 +134,8 @@ class ContentController extends Controller{
 	function editPage(){
 		$blockList = $this->block->getArrayList("block");
 		$obj = $this->content->getRecordById($_GET['id']);
+		
+		$obj["content"] = stripslashes($obj["content"]);
 		require('view/admin/content_edit.php');
 	}
 
@@ -147,8 +151,8 @@ class ContentController extends Controller{
 	
 	
 	public function getFirstImg($str) { 
-		$pattern="/<img src=\\\\\"(.*?)\\\\\"/i";   //<img src=\"upload/32d3ca5e23f4ccf1e4c8660c40e75f33.png\" style=\"width: 114px;\"></p> 
-        if(preg_match($pattern, $str,$out)){
+		  $pattern="/img src=\"(.*?)\"/i";    //<img src=\"upload/32d3ca5e23f4ccf1e4c8660c40e75f33.png\" style=\"width: 114px;\"></p> 
+      if(preg_match($pattern, $str,$out)){
            return $out[1];
         }
 		return "";
