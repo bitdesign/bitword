@@ -28,9 +28,11 @@ Features:
 
 <h1>安装注意事项 - Install</h1> 
 
-First of all ,make sure your apache support .htaccess . Nginx server please include the .htaccess_nginx to your nginx.conf .
+First of all ,make sure your apache support .htaccess . 
+Nginx server please include the .htaccess_nginx to your nginx.conf .
 
-如果您使用Apache，请确认支持.htaccess。如果您使用Nginx,请将目录中的.htaccess_nginx引入您的nginx.conf .
+如果您使用Apache，请确认支持.htaccess。
+如果您使用Nginx,请将目录中的.htaccess_nginx引入您的nginx.conf 。
 
 
 将所有文件上传到您的网站根目录,输入您的网站URL经过简单的2步即可完成安装。
