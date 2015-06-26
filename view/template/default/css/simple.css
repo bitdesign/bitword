@@ -1,0 +1,241 @@
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'ËÎÌו' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+
+body{
+    background: url(../images/bg.png);
+
+}
+
+.header-text{
+    color:#666;
+}
+.header-text:hover{
+   color: rgb(255,102,0); 
+   background:none!important;
+}
+
+.float_div{
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.5;
+    opacity: 0.5; 
+    position: fixed; 
+    z-index:99999;
+    top: 20%; 
+    right:0;
+    background:#bbb; 
+    width:50px;
+    
+}
+
+.reply{ font-size: 14px";color: #666; border-bottom:1px solid #F0F0F0; display:block; line-height:25px;}
+    
+.float_div_item{
+    
+    width:100%; 
+    height:50px;
+    cursor:pointer;
+    line-height:50px;
+    display:block;
+    text-align:center;   
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+.blank20{
+    width:100%;
+    height:20px;  
+}
+
+.list-group-item-text{
+    line-height:1.8em;
+    font-size:1.1em;
+}
+
+.container-ext{
+    padding:0px 0px!important;
+    max-width:960px;
+}
+.panel-heading-ext{
+    border-bottom:1px solid #e5e5e5;
+    color: #333;
+    font-size: 18px;
+    text-shadow: 0 2px 0 #EEE;
+    cursor:pointer;
+    background:rgb(248,252,254);
+}
+.panel-heading-ext:hover{
+   color: rgb(255,102,0); 
+}
+.panel-title{
+   
+    text-shadow: 0 0px 0 #EEE  
+}
+
+.panel-title a{
+    text-decoration:none;
+    height:40px;
+    line-height:40px;
+    font-size: 24px;
+    color: #333;
+}
+
+.panel-title a:hover{
+    color: rgb(255,102,0);
+}
+
+.panel-body{
+    line-height:200%;
+    overflow:hidden;
+    font-size:1.1em;
+    padding:35px;
+}
+
+
+.list-title{
+    color: #333;
+    font-size: 20px;
+}
+
+.news-title{
+    color: #333;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #EEE ;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+
+.list-group li{
+    list-style-type:none;
+    border-bottom:1px dashed #ccc;
+    padding:10px 0;
+    margin:0 10px;
+}
+.list-group li a{
+    color:#666;
+}
+
+.nopadding{
+    padding:0px;
+}
+.nomargin{
+    margin:0px;
+}
+.no-right-padding{
+    padding-right:0px!important;
+}
+
+.double-right-padding{
+    padding-right:28px!important;
+}
+.noborder{
+    border:none!important;
+}
+.no-left-padding{
+    padding-left:0px;
+}
+.coverline{
+    margin-bottom:-1px!important;
+}
+
+.list-group>.active {
+    background-color: rgb(247,247,247) !important;
+    border-color: #ddd !important;
+    color:#000;
+}
+.list-group>a{
+    border-left:none;
+    border-right:none;
+    border-radius: 0px!important;
+}
+.row-ext:hover{
+    background-color: rgb(248,252,254) !important;
+    cursor:pointer;
+}
+
+.bookmark{
+    border:none;
+    background: rgb(255,255,255);
+}
+.bookmark:hover{
+   background-color: rgb(248,252,254) !important;
+   cursor:pointer;
+}
+
+.noradius{
+    border-radius: 0px!important;
+}
+.zero{
+    margin:0px;
+    padding:0px;
+}
+.footer{
+    margin:0px; padding:0px;text-align:center;background:#333;
+    height:40px; line-height:40px;
+    color:#bbb;
+}
+.footer>span{
+    display:block;float:right;
+}
+.red{
+    color:#d33632;
+    margin-right:-9px;
+}
+.fullwidth{
+    width:100%;
+    margin:0px auto;
+}
+.ctx-item-img{
+    width:98%;
+    height:auto;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    box-shadow: 1px 1px 2px #d3d3d3;
+    padding:3px;
+
+}
+
+
+.list-group-item h4{
+    color:#3071A9;
+    font-size: 20px;
+    font-weight: normal;
+    padding:0px;
+    height: 20px;
+    line-height: 20px;
+}
+.list-group-item h4 span{
+    margin-right:10px;
+    background:#d33632;
+    color:#fff;
+    font-size: 10px;
+    float:left;
+    padding-left:7px;
+}
+
+.panel h5{
+    color:#999;
+    height:25px;
+    line-height:25px;
+}
+.panel hr{
+    margin:25px 0 10px 0;
+}
+
+.infoKey{font-size: 12px;background: #F8F8F8;	color: #999;
+border:1px solid #F0F0F0;display:block;margin:50px 0; padding-left:10px; height:25px;line-height:25px;}
+
+
+
+.clear {
+    clear: both;
+    height:1px;
+    margin-top:-1px;
+    overflow:hidden;
+}
+
+.topalign{vertical-align:top;}
