@@ -10,7 +10,7 @@ Options +FollowSymLinks
 	RewriteCond %{QUERY_STRING} !^$
 	Rewriterule ([a-z]*)!([a-z]*)$ router.php?c=$1\&m=$2&%{query_string}   [NC]
 	Rewriterule ([a-z0-9]*)_([a-z0-9]*).html$  view/template/$1/static/$2.html   [NC]
-	Rewriterule admin$ admin!dashboard   [NC]
+	#Rewriterule admin$ admin!dashboard   [NC]
 	RewriteRule backup/.* – [F]
 	
 	RewriteRule config/(.*).(php)$ – [F]

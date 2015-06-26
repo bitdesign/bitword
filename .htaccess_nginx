@@ -1,7 +1,7 @@
 	rewrite ^/([a-zA-Z]+)!([a-zA-Z]+)$ /router.php?c=$1&m=$2 last;
 	rewrite ^/([a-zA-Z]+)!([a-zA-Z]+)\?([*]+)$ /router.php?c=$1&m=$2&$3 last;
 	rewrite ^/([a-zA-Z0-9]+)_([a-zA-Z0-9]+).html$ /view/template/$1/static/$2.html last;
-	rewrite ^/admin$ /admin!dashboard last;
+	#rewrite ^/admin$ /admin!dashboard last;
 	if ($request_uri ~* backup/.*) {
 	    return 403;
 	}
@@ -9,9 +9,6 @@
 	    return 403;
 	}
 	if ($request_uri ~* controller/(.*).(php)$) {
-	    return 403;
-	}
-	if ($request_uri ~* lib/(.*).(php)$) {
 	    return 403;
 	}
 	if ($request_uri ~* log/.*) {
