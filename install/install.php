@@ -124,6 +124,7 @@ error_reporting(0);
                             echo "<br/>".$spacechk1.$space.$spacechk2;
                             return;
                         }
+                        $lan = $_SESSION['lan'];
                         require_once "note_$lan.html";
                         ?>
                     </pre>
