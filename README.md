@@ -27,14 +27,16 @@ Features:
 </pre>
 
 <h1>安装注意事项 - Install</h1> 
-
-如果您使用Apache，请确认支持.htaccess。
+如果您使用Apache，请确认支持.htaccess。<br/>
 如果您使用Nginx,请将目录中的.htaccess_nginx引入您的nginx.conf 。<br/>
 
+First of all ,make sure your apache support .htaccess . <br/>
+Nginx server please include the .htaccess_nginx to your nginx.conf .<br/>
 
-将所有文件上传到您的网站根目录,输入您的网站URL,系统会根据您的浏览器自动选择安装语言开始安装。<br/>
+将所有文件上传到您的网站根目录,输入您的网站URL开始安装,系统会根据您的浏览器自动选择安装语言。<br/>
 Upload all the files to your web site and enter your website url to begin install.
-The system will automatically choose the language based on your browser.
+The system will automatically choose the language based on your browser.<br/>
+
 
 <h1>快照 - Snapshot</h1> 
 
