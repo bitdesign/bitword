@@ -195,7 +195,7 @@ error_reporting(0);
                 $webroot = substr($SCRIPT_NAME,0,$POS-1);
 
 
-                $ret = $installer->install($hostname, $username, $password, $dbname, $adminname, $adminpwd,$ihavedb,"install/bitcms.sql",$webroot);
+                $ret = $installer->install($hostname, $username, $password, $dbname, $adminname, $adminpwd,$ihavedb,"bitcms.sql",$webroot);
 
                 $msgarr = $installer->msg;
 
