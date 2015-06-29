@@ -1,9 +1,9 @@
-BITCMS
+BitWord
 ======
 
-BITCMS是一款超轻量级CMS(主程序不足1M）。基于PHP+MySQL+Bootstrap+极简主思想设计。
+BitWord是一款超轻量级CMS(主程序不足1M）。基于PHP+MySQL+Bootstrap+极简主思想设计。
 
-BITCMS is a super lightweight blog software. Based on PHP+MySQL+Bootstrap+minimalist. 
+BitWord is a super lightweight blog software. Based on PHP+MySQL+Bootstrap+minimalist. 
 
 主要特色:
 <pre>
@@ -38,6 +38,6 @@ Upload all the files to your web site and enter your website url to begin instal
 
 <h1>快照 - Snapshot</h1> 
 
-![Image text](https://github.com/bitdesign/bitcms/raw/master/snapshot/install.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/snapshot/front.png)
-![Image text](https://github.com/bitdesign/bitcms/raw/master/snapshot/console.png)
+![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/install.png)
+![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/front.png)
+![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/console.png)
