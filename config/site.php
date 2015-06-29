@@ -2,9 +2,9 @@
 date_default_timezone_set('PRC');
 include "config.php";
 $logo='logo.png';
-$name='BitCMS';
-$keywords='BitCMS';
-$description='BitCMS';
+$name='BitWord';
+$keywords='BitWord';
+$description='BitWord';
 $tpl_root='view/template/default';
 $tpl_name='default';
 $accstat='';
