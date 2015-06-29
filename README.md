@@ -36,8 +36,8 @@ Nginx server please include the .htaccess_nginx to your nginx.conf .<br/>
 将所有文件上传到您的网站并输入您的网址,系统会根据您的浏览器自动选择安装语言开始安装。<br/>
 Upload all the files to your web site and enter your website url to begin install.The system will automatically choose the language based on your browser.<br/>
 
-<h1>快照 - Snapshot</h1> 
+###<h1>快照 - Snapshot</h1> 
 
-![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/install.png)
-![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/front.png)
-![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/console.png)
+###![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/install.png)
+###![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/front.png)
+###![Image text](https://github.com/bitdesign/BitWord/raw/master/snapshot/console.png)
