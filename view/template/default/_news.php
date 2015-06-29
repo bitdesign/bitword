@@ -24,5 +24,11 @@
 		<li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
    </ul>
     <div class="blank20"></div>
-    
+   
+   <div class="panel-heading panel-heading-ext">DownLoad</div>
+   <ul class="list-group list-group-ext">
+		<li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a></li>
+		<li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
+   </ul>
+    <div class="blank20"></div>
 </div>
