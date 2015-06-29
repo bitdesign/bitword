@@ -120,13 +120,13 @@ CREATE TABLE `users` (
 INSERT INTO `block` VALUES   ( '1', 'Share', 'upload/default.png', '0', '0',  date_format(now(),'%Y%m%d%H%i%s'),  date_format(now(),'%Y%m%d%H%i%s'), '1');
 INSERT INTO `block` VALUES   ( '2', 'News', 'upload/default.png', '0', '0',  date_format(now(),'%Y%m%d%H%i%s'),  date_format(now(),'%Y%m%d%H%i%s'), '1');
 INSERT INTO `siteparas` VALUES   ( 'logo', 'logo.png');
-INSERT INTO `siteparas` VALUES   ( 'name', 'BitCMS');
-INSERT INTO `siteparas` VALUES   ( 'keywords', 'BitCMS');
-INSERT INTO `siteparas` VALUES   ( 'description', 'BitCMS');
+INSERT INTO `siteparas` VALUES   ( 'name', 'BitWord');
+INSERT INTO `siteparas` VALUES   ( 'keywords', 'BitWord');
+INSERT INTO `siteparas` VALUES   ( 'description', 'BitWord');
 INSERT INTO `siteparas` VALUES   ( 'tpl_root', 'view/template/default');
 INSERT INTO `siteparas` VALUES   ( 'tpl_name', 'default');
 INSERT INTO `siteparas` VALUES   ( 'accstat', '');
-INSERT INTO `siteparas` VALUES   ( 'notice', 'A new BitCMS site is online');
+INSERT INTO `siteparas` VALUES   ( 'notice', 'A new BitWord site is online');
 INSERT INTO `siteparas` VALUES   ( 'headimg', '');
 INSERT INTO `siteparas` VALUES   ( 'homemaxnum', '50');
 INSERT INTO `siteparas` VALUES   ( 'newmaxnum', '10');
