@@ -21,7 +21,6 @@
    <div class="panel-heading panel-heading-ext">Link</div>
    <ul class="list-group list-group-ext">
 		<li><a href="http://www.bit1010.com" title="">www.bit1010.com</a></li>
-		<li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
    </ul>
     <div class="blank20"></div>
    
