@@ -2,6 +2,12 @@
 <html>
     <head>
         <?include "_include.php";?>
+        
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function() {
+                $("img.ctx-item-img").lazyload();
+            });
+        </script>
     </head>
     <body>
         <div class="container container-ext">
@@ -31,7 +37,7 @@
                                 </div>
                             <? }else{ ?>    
                                 <div class="col-xs-12 col-sm-4">
-                                  <img src="<?=$content["dsp_img"]?>" class="ctx-item-img"/>
+                                  <img src="<?=$webroot.'/upload/image/transparent.gif'?>" data-original="<?=$content["dsp_img"]?>" class="ctx-item-img"/>
                                 </div>
                                 <div class="col-xs-12 col-sm-8 no-left-padding">
                                     <p class="list-group-item-text">

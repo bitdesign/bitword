@@ -16,6 +16,7 @@
 
 <script type="text/javascript" src="view/public/js/jquery.js"></script>
 <script type="text/javascript" src="view/public/js/jquery.form.js"></script>
+<script type="text/javascript" src="view/public/js/jquery.lazyload.min.js"></script>
 
 <!--
 <script type="text/javascript" src="view/public/js/jquery.validate.js"></script>
