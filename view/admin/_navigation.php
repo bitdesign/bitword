@@ -4,7 +4,8 @@
         $.post("Admin!publishStaticIndex",{"method":m},
         function(data){
             if(data=="true"){
-                alert("<?=$publishok?>");
+                alert("<?=$tsuccess?>");
+               // alert("<?=$publishok?>");
                 window.location.reload();
             }else alert(data);
             },"html"
@@ -28,11 +29,12 @@
 
     <ul class="nav navbar-nav navbar-right navbar-user">
         
-       
+       <!--
         <li class="dropdown">
             <a onclick="doPublic(1);"><i class="fa fa-fw fa-share-square-o"></i> <?=$ttopublish?> </a>
         </li>
-      
+        -->
+        
         <li class="dropdown">
             <a href="index.html" target="_blank"><i class="fa fa-fw fa-home"></i> <?=$thomepage?> </a>
         </li>

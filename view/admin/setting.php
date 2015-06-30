@@ -52,8 +52,9 @@
 				
     				function(data) {
     					if(data == "true"){
-    					    
-    					    alert("<?=$tsuccess?>"); location.href = location.href;
+    					    doPublic(1);
+    					    //alert("<?=$tsuccess?>"); 
+    					    //location.href = location.href;
     						
     					}else{
     						alert(data);
