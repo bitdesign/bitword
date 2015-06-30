@@ -11,7 +11,7 @@ class Content extends BaseModel{
 		$this->db->exec("update `content`  set pub_tm='".$pubTm."',sts = 1 WHERE  link='' and id in (".formatString($id).")");
 	}
 	public function getRecordById($id) {
-		return $this->db->readRecord("(select a.*,b.usr_nm,c.block_name from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id=c.block_id) tmp","id=".$id);
+		return $this->db->readRecord("(select a.*,b.usr_rnm,c.block_name from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id=c.block_id) tmp","id=".$id);
 	}
 	
 	public function addVisits($id) {
@@ -28,7 +28,7 @@ class Content extends BaseModel{
 	}
 	
 	public function getContents($maxNum){
-		$sql = "(select id,block_name,title,a.dsp_img,edit_tm,usr_nm,visits,top_tm,left(content,300) as content from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id = c.block_id where sts='1' order by top_tm desc ,pub_tm desc   limit 0,".$maxNum.") tmp";
+		$sql = "(select id,block_name,title,a.dsp_img,edit_tm,usr_rnm,visits,top_tm,left(content,300) as content from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id = c.block_id where sts='1' order by top_tm desc ,pub_tm desc   limit 0,".$maxNum.") tmp";
 		return $this->db->queryForArrayLimit($sql);
 	}	
 	public function save() {

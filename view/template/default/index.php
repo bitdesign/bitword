@@ -44,7 +44,7 @@
                                     <hr/>
                                     <h5>
                                         <i class="fa fa-fw fa-hand-o-right"></i><?=$content["block_name"]?>&nbsp;&nbsp;&nbsp;
-                                        <i class="fa fa-fw fa-user"></i><?=$content["usr_nm"]?>&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-fw fa-user"></i><?=$content["usr_rnm"]?>&nbsp;&nbsp;&nbsp;
                                         <!--<i class="fa fa-fw fa-pencil-square-o"></i><?=bitdate($content["input_tm"])?>&nbsp;&nbsp;&nbsp;-->
                                         <i class="fa fa-fw fa-clock-o"></i><?= btime($content["input_tm"]) ?>
                                      </h5>

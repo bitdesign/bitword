@@ -75,7 +75,7 @@
               <h4><?=$obj["title"]?></h4>
               <h5>
                 <!--<i class="fa fa-file-text-o"></i> <?=$obj["block_name"]?>&nbsp;&nbsp;-->
-                <i class="fa fa-fw fa-user"></i><?=$obj["usr_nm"]?>&nbsp;&nbsp;
+                <i class="fa fa-fw fa-user"></i><?=$obj["usr_rnm"]?>&nbsp;&nbsp;
                 <i class="fa fa-fw fa-clock-o"></i><?=date('Y-m-d', strtotime($obj["edit_tm"]))?>&nbsp;&nbsp;
                 <!--<i class="fa fa-fw fa-eye"></i><?=$obj["visits"]?>&nbsp;&nbsp;
                 <i class="fa fa-fw fa-leaf"></i> keyword : <?=$obj["keyword"]?>&nbsp;&nbsp;-->
