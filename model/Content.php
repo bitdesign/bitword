@@ -51,6 +51,25 @@ class Content extends BaseModel{
 	
 	}
 	
+	public function insert() {
+		$arr = array (
+			'block_id',
+			'title',
+			'keyword',
+			'content',
+			'content_short',
+			'sts',
+			'dsp_img',
+			'link',
+			'input_tm',
+			'edit_tm',
+			'pub_tm',
+			'usr_id'
+		);
+		return $this->db->postInsert("content", $arr);
+	
+	}
+	
 	
 	public function getFirstBatchByTime($maxNum=10) {
 		$contents = $this->db->queryForArrayLimit("(select id,title from content where sts='1' order by pub_tm desc limit 0,$maxNum) tmp","");
