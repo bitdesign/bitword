@@ -1,33 +1,35 @@
 <div class="panel noradius noborder">
-   
-   <div class="panel-heading panel-heading-ext">Latest</div>
-  
-   <ul class="list-group list-group-ext">
-		<? foreach ($contentsNewTop as $obj){	?>
-		<li><a href="<?=$webroot.'/'.$tpl_name.'_'.$obj['id']?>.html" title="<?=$obj['title']?>"><?=$obj['title']?></a></li>
-		<? } ?>
-   </ul>
-   <div class="blank20"></div>
 
-  <div class="panel-heading panel-heading-ext">Archivement</div>
-   <ul class="list-group list-group-ext">
-		<? foreach ($blocks as $obj){	?>
-		<li><a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html" title="<?=$obj['block_name']?>"><?=$obj['block_name'].' ('.$obj['content_num'].')'?></a></li>
-		<? } ?>
-   </ul>
+    <div class="panel-heading panel-heading-ext">Latest</div>
+
+    <ul class="list-group list-group-ext">
+        <? foreach ($contentsNewTop as $obj){	?>
+        <li><a href="<?=$webroot.'/'.$tpl_name.'_'.$obj['id']?>.html" title="<?=$obj['title']?>"><?=$obj['title']?></a></li>
+        <? } ?>
+    </ul>
     <div class="blank20"></div>
-   
-   
-   <div class="panel-heading panel-heading-ext">Link</div>
-   <ul class="list-group list-group-ext">
-		<li><a href="http://www.bit1010.com" title="">www.bit1010.com</a></li>
-   </ul>
+
+    <div class="panel-heading panel-heading-ext">Archivement</div>
+    <ul class="list-group list-group-ext">
+        <? foreach ($blocks as $obj){	?>
+        <li><a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html" title="<?=$obj['block_name']?>"><?=$obj['block_name'].' ('.$obj['content_num'].')'?></a></li>
+        <? } ?>
+    </ul>
     <div class="blank20"></div>
-   
-   <div class="panel-heading panel-heading-ext">DownLoad</div>
-   <ul class="list-group list-group-ext">
-		<li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a></li>
-		<li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
-   </ul>
+
+    <div class="panel-heading panel-heading-ext">DownLoad</div>
+    <ul class="list-group list-group-ext">
+        <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a></li>
+        <li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
+    </ul>
     <div class="blank20"></div>
+
+
+    <div class="panel-heading panel-heading-ext">About</div>
+    <ul class="list-group list-group-ext">
+        <li><a href="http://www.bit1010.com" title="">www.bit1010.com</a></li>
+        <li><a href="mailto:bitword@163.com?subject=&body=" title="">bitword@163.com</a></li>
+    </ul>
+    <div class="blank20"></div>
+
 </div>
