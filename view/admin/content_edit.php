@@ -69,24 +69,24 @@
                 $("#sts").val(sts) ;
 
                 $.post("Content!save",$('#contentEditForm').formSerialize(),
-                function(data) {
-                    if(data == "true"){
-                        alert("<?=$tsuccess?>");
-                        //location.href = "Content!listPage";
-                    }else{
-                        //alert("<?=$tfailed?>");
-                        alert(data);
+                    function(data) {
+                        if(data.code == "true"){
+                             $("#id").val(data.id) ;
+                             alert("<?=$tsuccess?>");
+                            //location.href = "Content!listPage";
+                        }else{
+                            //alert("<?=$tfailed?>");
+                            alert(data);
                         }
-                        },"html"
-                        );
-                        }
+                    },"json"
+                 );
+            } //doSubmit
 
-                        function doClose()
-                        {
-                        location.href = "Content!listPage";
-                        }
+            function doClose(){
+                    location.href = "Content!listPage";
+                }
 
-                    </script>
+            </script>
                 </head>
                 <body>
                     <div id="wrapper">
