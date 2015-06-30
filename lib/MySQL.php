@@ -28,6 +28,7 @@ class MySQL {
 		$sql = "insert into " . $table . "(" . $fileds . ") values (" . $values . ")";
 
 		$ret = mysql_query($sql);
+		return mysql_insert_id();
 	}
 
 	//Insert $_POST[] or save if exists，mysql need set the $dup fields unique
