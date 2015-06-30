@@ -208,8 +208,15 @@ class AdminController extends Controller{
 		fwrite($fp, $news_contents);
 		fclose($fp);
 		
+		
+		//$logger = LogUtil::getLogger();
+		
+		
 		//create a static html for this article
 		$fname = $tpl_root."/static/".$contentId.".html";
+		
+		//$logger->info($fname);
+		
 		ob_start();
 		$_GET["id"] = $contentId;
 		$contestIdListStr .= $contentId.",";
@@ -219,6 +226,8 @@ class AdminController extends Controller{
 		$fp = fopen($fname, "w");
 		fwrite($fp, $content);
 		fclose($fp);
+		
+		//$logger->info("finished");
 		
 		//create a static html for this article's block
 			
@@ -244,7 +253,7 @@ class AdminController extends Controller{
 		$fp = fopen("index.html", "w");
 		fwrite($fp, $indexContent);
 		fclose($fp);
-		echo "true";
+		//echo "true";
 	}
 	
 	function changePassWordPage(){

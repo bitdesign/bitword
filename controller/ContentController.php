@@ -107,7 +107,7 @@ class ContentController extends Controller{
 		$_POST["dsp_img"] = $dsp_img;
 		
 		//$logger = LogUtil::getLogger();
-		//$logger->info($_POST["content"]);
+		
 		//$logger->info($dsp_img);
 		
 		$_POST['usr_id'] = $_SESSION['loginuser']['usr_id'];
@@ -118,16 +118,29 @@ class ContentController extends Controller{
 		
 		$_POST["content_short"] = plainSubText($_POST["content"],200);
     
-    $_POST["content"]= addslashes($_POST["content"]);
-    
-		$this->content->save();
+        $_POST["content"]= addslashes($_POST["content"]);
+        
+        //$logger->info("1 isertid=". $_POST["id"]); 
+        
+        if( ! empty($_POST["id"]) ){
+           //  $logger->info("2 isertid=". $_POST["id"]); 
+            $this->content->save();
+        }else{
+            $_POST["id"] = $this->content->insert();
+           // $logger->info("3 isertid=". $_POST["id"]); 
+        }
+		
 		
 		if ( $_POST["sts"] == "1") {
 		    $adminController = new AdminController();
 		    $adminController->publishOne($_POST["id"],$_POST["block_id"]);
-	  }else{
-	      echo "true"; 
-		}
+	    }
+	    
+	    
+	    $arr = array ('code'=> 'true','id'=>$_POST["id"]); 
+
+        echo json_encode($arr); 
+	   // echo "{code: 'true',\nid: '" . $_POST["id"] . "'\n}";
 		
 	}
 	
