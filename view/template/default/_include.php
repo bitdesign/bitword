@@ -16,7 +16,10 @@
 
 <script type="text/javascript" src="view/public/js/jquery.js"></script>
 <script type="text/javascript" src="view/public/js/jquery.form.js"></script>
+
+<!--
 <script type="text/javascript" src="view/public/js/jquery.validate.js"></script>
 <script type="text/javascript" src="view/public/js/base64.js"></script>
 <script type="text/javascript" src="view/public/js/bit.js"></script>
 <script type="text/javascript" src="view/public/js/jquery.mousewheel.min.js"></script>
+-->
