@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <title><?=$obj["title"]?></title>
+        <meta name="Keywords" content="<?=$obj["keyword"]?>" />
+        <meta name="Description" content="<?=$obj["keyword"]?>" />
+        
         <?include "_include.php";?>
 
         <script language="javascript" type="text/javascript">
 
-            $(document).ready(function(){
-
-            });
-
-
-            function topme(rep_id){
-                /*
-                $.post("<?=$webroot?>/Reply!addTopCount",{"rep_id":rep_id},
-                function(data) {
-                if(data == "true"){
-                location.reload();
-                }else{
-                alert("false");
-                }
-                },"html"
-                );
-                */
-            }
+           
             function doSubmit(){
                 if( $("#rep_ctx").val() == ''){
                     alert("Please enter you words");
