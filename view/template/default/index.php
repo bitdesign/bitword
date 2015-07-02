@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title><?=$name?></title>
+        <meta name="Keywords" content="<?=$keywords?>" />
+        <meta name="Description" content="<?=$description?>" />
+        
         <?include "_include.php";?>
         
         <script language="javascript" type="text/javascript">
