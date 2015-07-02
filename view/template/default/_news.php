@@ -16,7 +16,10 @@
 
     <div class="cat-header">DownLoad</div>
     <ul>
+        <!--
         <li><a href="https://raw.githubusercontent.com/bitdesign/BitWord/master/bitword.zip" title="">BitWord</a></li>
+        -->
+        <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a></li>
         <li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
     </ul>
 
