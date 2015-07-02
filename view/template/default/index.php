@@ -5,59 +5,52 @@
         
         <script language="javascript" type="text/javascript">
             $(document).ready(function() {
-                $("img.ctx-item-img").lazyload();
+                $("img.panel-img").lazyload();
             });
         </script>
     </head>
     <body>
-        <div class="container container-ext">
+        <div class="container">
 
             <?include "_header.php";?>
 
 
-            <div class="row" >
+            <div class="main" >
 
-                <div class="col-xs-12 col-sm-9 double-right-padding">
+                <div class="main-left">
                     <form  method="post" action="Home!index">
                        <? foreach ($contents as $content){ ?>
                         
-                        <div class="panel panel-default noradius noborder">
-
-
-                            <div class="row list-group-item  row-ext zero noradius coverline"  style="padding:6px 10px;">
+                        <div class="panel margin-top20">
                                 
-                                <div class="panel-heading">
-                                    <h2 class="panel-title"><a href="<?=$tpl_name.'_'.$content['id']?>.html" ><?=$content["title"]?></a></h2>
+                                <div class="panel-header">
+                                    <a href="<?=$tpl_name.'_'.$content['id']?>.html" ><?=$content["title"]?></a>
                                 </div>
+                               
                             <? if( empty( $content["dsp_img"] )){ ?>
-                                <div class="col-xs-12 col-sm-12">
-                                    <p class="list-group-item-text">
+                                <div class="panel-body">
+                                    <p class="panel-text">
                                          <?=$content["content"]?>
                                     </p>
                                 </div>
-                            <? }else{ ?>    
-                                <div class="col-xs-12 col-sm-4">
-                                  <img src="<?=$webroot.'/upload/image/transparent.gif'?>" data-original="<?=$content["dsp_img"]?>" class="ctx-item-img"/>
-                                </div>
-                                <div class="col-xs-12 col-sm-8 no-left-padding">
-                                    <p class="list-group-item-text">
+                            <? }else{ ?>
+                                <div class="panel-body">
+                                    <div class="panel-left">
+                                         <img src="<?=$webroot.'/upload/image/transparent.gif'?>" data-original="<?=$content["dsp_img"]?>" class="panel-img"/>
+                                    </div>
+                                    <div class="panel-right panel-text">
                                         <?=$content["content"]?>
-                                    </p>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
+                            <? } ?>
                                 
-                            <? } ?>     
-                                <div class="col-xs-12 col-sm-12">
+                                <div class="panel-footer">
                                     <hr/>
-                                    <h5>
-                                        <i class="fa fa-fw fa-hand-o-right"></i><?=$content["block_name"]?>&nbsp;&nbsp;&nbsp;
-                                        <i class="fa fa-fw fa-user"></i><?=$content["usr_rnm"]?>&nbsp;&nbsp;&nbsp;
-                                        <!--<i class="fa fa-fw fa-pencil-square-o"></i><?=bitdate($content["input_tm"])?>&nbsp;&nbsp;&nbsp;-->
-                                        <i class="fa fa-fw fa-clock-o"></i><?= bitdate($content["input_tm"]) ?>
-                                     </h5>
+                                     <i class="fa fa-fw fa-hand-o-right"></i><?=$content["block_name"]?>&nbsp;&nbsp;&nbsp;
+                                     <i class="fa fa-fw fa-user"></i><?=$content["usr_rnm"]?>&nbsp;&nbsp;&nbsp;
+                                     <i class="fa fa-fw fa-clock-o"></i><?= bitdate($content["input_tm"]) ?>
                                  </div>
-
-                            </div>
-
                             
                         </div>
                         <?}?>
@@ -65,10 +58,11 @@
                     </form>
                 </div>
 
-                <div class="col-xs-12 col-sm-3 no-left-padding">
-                   <?include "$tpl_root/static/_news.html";?>
-                    <!--
+                <div class="main-right">
                     
+                  
+                    <? include "$tpl_root/static/_news.html";?>
+                      <!--
                     <? //include "_news.php";?>
                     <? //include "_words.php";?>
                     -->
