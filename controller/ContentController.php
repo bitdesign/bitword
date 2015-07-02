@@ -98,7 +98,12 @@ class ContentController extends Controller{
 	function save(){
 		//include "config/site.php";
 		$curTm = date("YmdHis",time());
-		if(empty($_POST["id"])){
+		
+		//$logger = LogUtil::getLogger();
+		
+		//$logger->info("-----------1[".$_POST["id"]."]");
+		
+		if(empty($_POST["input_tm"])){
 			$_POST["input_tm"] = $curTm;
 		}
 		$_POST["edit_tm"] = $curTm;
@@ -106,9 +111,7 @@ class ContentController extends Controller{
 		$dsp_img = $this->getFirstImg($_POST["content"]);
 		$_POST["dsp_img"] = $dsp_img;
 		
-		//$logger = LogUtil::getLogger();
 		
-		//$logger->info($dsp_img);
 		
 		$_POST['usr_id'] = $_SESSION['loginuser']['usr_id'];
 		
