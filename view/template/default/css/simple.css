@@ -237,6 +237,11 @@ a:hover{
     font-size:1.1em;
     color:#234;
     padding:0 25px;
+   
+    
+}
+.info-text img{
+    max-width:100%;
 }
 
 .align-right{
