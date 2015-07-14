@@ -72,7 +72,7 @@ class Content extends BaseModel{
 	
 	
 	public function getFirstBatchByTime($maxNum=10) {
-		$contents = $this->db->queryForArrayLimit("(select id,title from content where sts='1' order by pub_tm desc limit 0,$maxNum) tmp","");
+		$contents = $this->db->queryForArrayLimit("(select id,title from content where sts='1' order by edit_tm desc limit 0,$maxNum) tmp","");
 		return $contents;
 	}
 	
