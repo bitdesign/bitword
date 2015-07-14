@@ -4,6 +4,7 @@
     </div>
     <div class="nav" >
         <a href="<?=$webroot?>/index.html">Homepage</a>
+        <a href="<?=$webroot?>/bbs">BBS</a>
         <a href="<?=$webroot?>/content!listPage" target="_blank">Console</a>
     </div>
 </div>
