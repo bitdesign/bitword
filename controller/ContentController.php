@@ -55,6 +55,8 @@ class ContentController extends Controller{
 
 	function recommend(){
 		$this->content->recommend($_POST["id"],$_POST["opr"]);
+		$adminController = new AdminController();
+		$adminController->publishOne($_POST["id"],$_POST["block_id"]);
 		echo "true";
 	}
 
