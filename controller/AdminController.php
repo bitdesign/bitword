@@ -121,7 +121,7 @@ class AdminController extends Controller{
 		$this->delFile("log",$fileName);
 	}
 	
-	function publishStaticIndex($m = "0"){
+	function publishStaticIndex($m = "1"){
 		
 		include "config/site.php";
 		$model = new BaseModel(); 
@@ -131,11 +131,16 @@ class AdminController extends Controller{
 			$m = $_POST["method"];
 		}
 		$condition = "";
-		if( $m == "0"){
-			$condition="where sts='0'  order by input_tm desc";
+		
+		/*
+		if( $m == "1"){
+			$condition="where sts='1'  order by input_tm desc";
 		}else{
 			$condition="where sts !='-1'  order by input_tm desc";
 		}
+		*/
+		$condition="where sts='1'  order by input_tm desc";
+		
 		$contents = $model->getArrayList("content",$condition); 
 		$contestIdListStr="";
 		
@@ -177,8 +182,8 @@ class AdminController extends Controller{
 			fwrite($fp, $indexContent);
 			fclose($fp);
 		}
-		$contentObj = new Content(); 
-		$contentObj->updatePublishSts($contestIdListStr);
+		//$contentObj = new Content(); 
+		//$contentObj->updatePublishSts($contestIdListStr);
 		
 		//create index.html
 		unset($_GET['block_id']);
@@ -241,8 +246,8 @@ class AdminController extends Controller{
 		fwrite($fp, $indexContent);
 		fclose($fp);
 		
-		$contentObj = new Content(); 
-		$contentObj->updatePublishSts($contestIdListStr);
+		//$contentObj = new Content(); 
+		//$contentObj->updatePublishSts($contestIdListStr);
 		
 		//create index.html
 		unset($_GET['block_id']);

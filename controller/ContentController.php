@@ -101,7 +101,7 @@ class ContentController extends Controller{
 		
 		//$logger = LogUtil::getLogger();
 		
-		//$logger->info("-----------1[".$_POST["id"]."]");
+		
 		
 		if(empty($_POST["input_tm"])){
 			$_POST["input_tm"] = $curTm;
@@ -127,17 +127,17 @@ class ContentController extends Controller{
         
         if( ! empty($_POST["id"]) ){
            //  $logger->info("2 isertid=". $_POST["id"]); 
+           //$logger->info("--save-sts--------1[".$_POST["sts"]."]");
             $this->content->save();
         }else{
+            //$logger->info("--insert-sts--------1[".$_POST["sts"]."]");
             $_POST["id"] = $this->content->insert();
            // $logger->info("3 isertid=". $_POST["id"]); 
         }
 		
-		
-		if ( $_POST["sts"] == "1") {
-		    $adminController = new AdminController();
-		    $adminController->publishOne($_POST["id"],$_POST["block_id"]);
-	    }
+		//不管是状态变更还是更新都需要重新生成index
+		$adminController = new AdminController();
+		$adminController->publishOne($_POST["id"],$_POST["block_id"]);
 	    
 	    
 	    $arr = array ('code'=> 'true','id'=>$_POST["id"]); 
@@ -151,7 +151,7 @@ class ContentController extends Controller{
 		$blockList = $this->block->getArrayList("block");
 		$obj = $this->content->getRecordById($_GET['id']);
 		
-		$obj["content"] = stripslashes($obj["content"]);
+		//$obj["content"] = $obj["content"];
 		require('view/admin/content_edit.php');
 	}
 
