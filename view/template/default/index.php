@@ -34,7 +34,7 @@
                             <? if( empty( $content["dsp_img"] )){ ?>
                                 <div class="panel-body">
                                     <p class="panel-text">
-                                         <?=$content["content"]?>
+                                         <?=$content["content_short"]?>
                                     </p>
                                 </div>
                             <? }else{ ?>
@@ -43,7 +43,7 @@
                                          <img src="<?=$webroot.'/upload/image/transparent.gif'?>" data-original="<?=$content["dsp_img"]?>" class="panel-img"/>
                                     </div>
                                     <div class="panel-right panel-text">
-                                        <?=$content["content"]?>
+                                        <?=$content["content_short"]?>
                                     </div>
                                     <div class="clear"></div>
                                 </div>

@@ -66,7 +66,7 @@
                     <div class="info-text">
 
                         <!--<i class="fa fa-fw fa-map-marker"></i>-->
-                        <?=stripslashes($obj["content"])?>
+                        <?=$obj["content"]?>
                         <br/>
 
 
