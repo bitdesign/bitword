@@ -48,7 +48,7 @@
 				$.post("Content!recommend",{"id":id, "opr":opr},
 					function(data){
 						if(data=="true"){
-							alert("<?=$trecommend?>");
+							alert("<?=$tsuccess?>");
 							window.location.reload();
 						}else alert(data);
 					},"html"
