@@ -53,6 +53,7 @@ $tedittm = "最后编辑时间" ;
 $publishtm = "发布时间" ;
 $publishok = "发布成功" ;
 $torecommend = "推荐" ;
+$derecommend = "取消推荐" ;
 $trecommend = "推荐成功" ;
 $visits = "阅读量" ;
 $topnum = "被顶次数" ;

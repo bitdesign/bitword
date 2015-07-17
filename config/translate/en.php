@@ -53,6 +53,7 @@ $tedittm = "Last Edit Time";
 $publishtm = "Publish Time";
 $publishok = "Publish success" ;
 $torecommend = "Recommend" ;
+$derecommend = "Revoke Recommendation" ;
 $trecommend = "Recommend success" ;
 $visits = "Visits";
 $topnum = "Top";
