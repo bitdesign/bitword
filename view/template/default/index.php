@@ -28,7 +28,12 @@
                         <div class="panel margin-top20">
                                 
                                 <div class="panel-header">
-                                    <a href="<?=$tpl_name.'_'.$content['id']?>.html" ><?=$content["title"]?></a>
+                                    <a href="<?=$tpl_name.'_'.$content['id']?>.html" >
+                                        <?=$content["title"]?>
+                                        <? if(isset($content["top_tm"]) ){ ?>
+                                             <img src="<?=$tpl_root?>/images/reco.gif"/>
+                                        <? } ?>
+                                    </a>
                                 </div>
                                
                             <? if( empty( $content["dsp_img"] )){ ?>
