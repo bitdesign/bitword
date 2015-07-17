@@ -24,7 +24,7 @@ class FileController extends Controller{
                 
                 $fileName = $_FILES['file']['name'];
                 $ext = explode('.', $fileName);
-                $filename = md5($fileName).'.' . $ext[1];
+                $filename = date("YmdHis") . rand(100,999).'.' . $ext[1];
                 
                 $dst_file = $filePath.$filename;
 
