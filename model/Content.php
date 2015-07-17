@@ -23,7 +23,7 @@ class Content extends BaseModel{
 		if( $opr ==1 ){
 			$this->db->exec("update `content`  set top_tm = '".$pubTm."' WHERE id=".$id);
 		}else{
-			$this->db->exec("update `content`  set top_tm = '' WHERE id=".$id);
+			$this->db->exec("update `content`  set top_tm = null WHERE id=".$id);
 		}
 	}
 	
