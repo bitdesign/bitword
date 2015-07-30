@@ -20,7 +20,6 @@ error_reporting(0);
         <link href="install.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="../view/public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="../view/public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="../view/template/default/css/simple.css" rel="stylesheet" type="text/css" media="screen" />
 
         <!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>

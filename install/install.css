@@ -1,5 +1,5 @@
 body{
-	background: url("images/bg.png") repeat scroll 0 0 transparent;
+	background: url("../view/template/default/images/bg.png") repeat scroll 0 0 transparent;
     color: #333333;
     font: 12px/1.5 Arial,Microsoft Yahei,Simsun;
     margin:0px;
