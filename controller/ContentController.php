@@ -25,7 +25,7 @@ class ContentController extends Controller{
 
 		$postTile = "";
 		$postBlockName = "";
-		$sts = "1,-1";
+		$sts = "1";
 
 		if(isset($_POST['title']))
 		{
