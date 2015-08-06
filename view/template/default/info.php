@@ -12,7 +12,9 @@
             
             
              $(document).ready(function() {
-
+                
+                 $("img.panel-img").lazyload();
+                 
                 var hasMoved = 0;
                 $(window).scroll(function () {
 

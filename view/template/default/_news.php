@@ -28,7 +28,7 @@
     <ul>
         <li><a href="http://www.bit1010.com" title="">我的网站</a></li>
         <li><a href="mailto:bitword@163.com?subject=&body=" title="">给我写邮件</a></li>
-        <li><img src="<?=$tpl_root?>/images/qr.png" style="width:98%;" /></li>
+        <li><img src="/<?=$tpl_root.'/images/transparent.gif'?>" data-original="/<?=$tpl_root?>/images/qr.png" style="width:96%;" class="panel-img"/></li>
     </ul>
 
 </div>
