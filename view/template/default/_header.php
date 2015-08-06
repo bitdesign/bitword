@@ -12,9 +12,9 @@
 
 
 <div id="float" style="bottom: -300px;">
-    <a id="float_gotop" class="floatbtn" href="#header" onclick="goRoll(0)" title="·µ»Ø¶¥²¿" style="opacity: 0.7;"></a>
-    <a class="linbak floatbtn" href="/content!listPage" title="µÇÂ½&amp;×¢²á" style="opacity: 0.7;"></a>
-    <a id="float_goend" class="floatbtn" href="javascript:void()" onclick="goend()" title="×ªµ½µ×²¿"></a>
+    <a id="float_gotop" class="floatbtn" href="#header" onclick="goRoll(0)" title="è¿”å›žé¡¶éƒ¨" style="opacity: 0.7;"></a>
+    <a class="linbak floatbtn" href="/content!listPage" title="ç™»é™†&amp;æ³¨å†Œ" style="opacity: 0.7;"></a>
+    <a id="float_goend" class="floatbtn" href="javascript:void()" onclick="goend()" title="è½¬åˆ°åº•éƒ¨"></a>
 </div>
 
 

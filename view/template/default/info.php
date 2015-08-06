@@ -9,7 +9,29 @@
         <?include "_include.php";?>
 
         <script language="javascript" type="text/javascript">
+            
+            
+             $(document).ready(function() {
 
+                var hasMoved = 0;
+                $(window).scroll(function () {
+
+                    offset = $(window).scrollTop();
+                    if (offset >0) {
+                        if( hasMoved == 0){
+                            $("#float").animate( {bottom:'100px'});
+                            hasMoved = 1;
+                        }
+
+                    }else{
+                        if( hasMoved == 1){
+                            $("#float").animate( {bottom:'-300px'});
+                            hasMoved = 0;
+                        }
+                    }
+                });
+            });
+            
            
             function doSubmit(){
                 if( $("#rep_ctx").val() == ''){
