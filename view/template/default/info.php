@@ -46,6 +46,11 @@
     <div class="container">
 
         <?include "_header.php";?>
+        
+         <?
+            $site_url = "http://".$_SERVER['SERVER_NAME'];
+            $fix_url = $site_url."/".$tpl_name.'_'.$obj['id'].".html"; 
+         ?>
 
         <div class="main" >
 
@@ -53,14 +58,15 @@
 
                 <div class="row margin-top20">
                     <div class="info-nav">
-                        <a href="<?=$webroot?>index.html"><i class="fa fa-fw fa-home"></i></a>
-                        <a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html"><?=$obj["block_name"]?></a>
+                        <a href="<?=$webroot?>index.html"><i class="fa fa-fw fa-home"></i>首页</a>&gt;
+                        <a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html"><?=$obj["block_name"]?></a>&gt;
+                        <a href="<?=$tpl_name.'_'.$obj['id']?>.html" ><?=$obj["title"]?></a>
                     </div>
                     <div class="info-title">
                         <h4><?=$obj["title"]?></h4>
                         <h5>
                             <i class="fa fa-fw fa-user"></i><?=$obj["usr_rnm"]?>&nbsp;&nbsp;
-                            <i class="fa fa-fw fa-clock-o"></i><?=btime($obj["edit_tm"])?>&nbsp;&nbsp;
+                            <i class="fa fa-fw fa-clock-o"></i><?=btime($obj["input_tm"])?>&nbsp;&nbsp;
                         </h5>
                     </div>
                     <div class="info-text">
@@ -68,8 +74,14 @@
                         <!--<i class="fa fa-fw fa-map-marker"></i>-->
                         <?=$obj["content"]?>
                         <br/>
-
-
+                       
+                        <ul>
+                            <li>本文固定链接: <a href="<?=$fix_url?>"><?=$fix_url?></a></li>
+                            <li>转载请注明: <?=$obj["usr_rnm"]?> <?=btime($obj["input_tm"])?> 于 <a href="<?=$site_url?>"><?=$name?></a> 发表</li>
+                       
+                        </ul>
+                        
+                        <br/>
                     </div>
 
                 </div><!--panel-->

@@ -204,7 +204,7 @@ a:hover{
     padding:10px;
     border-bottom: 1px solid #e5e5e5;
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
     background: rgb(248,252,254);
 }
@@ -291,4 +291,38 @@ a:hover{
     height:30px;
     line-height:30px;
     padding:0 10px;
+}
+
+
+
+#float {
+    position: fixed;
+    right: 10px;
+    bottom: -152px;
+    z-index: 100;
+}
+#float #float_gotop {
+    background: url(../images/linup.gif) #2b87ec no-repeat center center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+#float .linbak {
+    background: url(../images/linbak.gif) #2b87ec no-repeat center center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    margin: 1px 0;
+}
+#float #float_goend {
+    background: url(../images/lindown.gif) #2b87ec no-repeat center center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
 }
