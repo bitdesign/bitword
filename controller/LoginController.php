@@ -64,9 +64,7 @@ class LoginController{
 		if (!empty($user)) {
 			$_SESSION['loginuser'] = $user;
 			echo "true";
-		} else {
-			echo "false";
-		}
+		} 
 	}
 	
 	
