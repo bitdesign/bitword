@@ -14,20 +14,11 @@
         <? } ?>
     </ul>
 
-    <div class="cat-header">下载BitWord</div>
+    <div class="cat-header">功能</div>
     <ul>
-        <!--
-        <li><a href="https://raw.githubusercontent.com/bitdesign/BitWord/master/bitword.zip" title="">BitWord</a></li>
-        -->
-        <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a></li>
-        <li><a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
-    </ul>
-
-
-    <div class="cat-header">与我联系</div>
-    <ul>
-        <li><a href="http://www.bit1010.com" title="">我的网站</a></li>
-        <li><a href="mailto:bitword@163.com?subject=&body=" title="">给我写邮件</a></li>
+        <li><a href="/content!listPage" title="">登录</a></li>
+        <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a>@<a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
+        <li><a href="mailto:bitword@163.com?subject=&body=" title="">MailToME</a></li>
         <li><img src="/<?=$tpl_root.'/images/transparent.gif'?>" data-original="/<?=$tpl_root?>/images/qr.png" style="width:96%;" class="panel-img"/></li>
     </ul>
 
