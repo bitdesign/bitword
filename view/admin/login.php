@@ -12,7 +12,7 @@
 					if(data == "true"){
 						location="content!listPage";
 					}else{
-						alert('<?=$tlogerr?>');
+						alert(data);
 					}
 				},"html"
 				);
