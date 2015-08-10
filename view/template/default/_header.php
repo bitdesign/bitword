@@ -2,12 +2,11 @@
     <div class="logo">
         <a class="logo" href="<?=$webroot?>/index.html"><img src="<?=$webroot.'/upload/'.$logo ?>" /></a>
     </div>
-    <!--
-    <div class="nav" >
-        <a href="<?=$webroot?>/index.html">Homepage</a>
-        <a href="<?=$webroot?>/content!listPage" target="_blank">Console</a>
+    <div class="words">
+        世界的另外一些地方需要我去献出我微薄的力量 -- CHE.格瓦拉
     </div>
-    -->
+    
+    <? include "$tpl_root/static/_header_nav.html ";?>
 </div>
 
 
