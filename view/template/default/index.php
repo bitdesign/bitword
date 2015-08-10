@@ -35,8 +35,8 @@
     <body>
         <div class="container">
 
-            <?include "_header.php";?>
-
+            <? include "_header.php";?>
+            
 
             <div class="main" >
 

@@ -36,13 +36,13 @@ body{
     color: rgb(255,102,0);
 }
 
-.header .nav{
+.nav{
     width:100%;
     display:inline;
     float:left;
     background-color:rgb(71,69,70);
 }
-.header .nav li{
+.nav li{
     float:left;
     list-style-type:none;
     width:100px;
@@ -50,18 +50,18 @@ body{
     text-align:center;
     border-right:solid thin #555;
 }
-.header .nav li a{
+.nav li a{
     color:#fff;
     line-height:45px;
     font-size:16px;
 }
 
 
-.header .nav li:hover{
+.nav li:hover{
     background-color:#000;
 }
 
-.header .nav li a:hover{
+.nav li a:hover{
     color:rgb(255,102,0);
 }
 
