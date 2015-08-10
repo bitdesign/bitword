@@ -154,6 +154,18 @@ class AdminController extends Controller{
 		fwrite($fp, $news_contents);
 		fclose($fp);
 		
+		
+		//first create _header_nav.html
+		$news_file_name = $tpl_root."/static/_header_nav.html";
+		ob_start();
+		$home->headerNav();
+		$news_contents = ob_get_contents();
+		ob_end_clean();
+		$fp = fopen($news_file_name, "w");
+		fwrite($fp, $news_contents);
+		fclose($fp);
+		
+		
 		//create a static html for each article
 		foreach ($contents as $content){
 			$fname = $tpl_root."/static/".$content['id'].".html";

@@ -116,6 +116,17 @@ class HomeController{
 		require("$tpl_root/_news.php");
 	}
 	
+	
+	function headerNav(){
+		include "config/site.php";
+		require_once('model/Block.php');
+		$block = new Block();	
+		
+		$blocks = $block->getBlocksWithContentNum();
+		require("$tpl_root/_header_nav.php");
+	}
+	
+	
 	function getPager($table,$db,$perPageCnt=50){
 		$pageNo = trim($_POST['skipValue']);
 		$pager = new Pager($table,$db,$pageNo,$perPageCnt);
