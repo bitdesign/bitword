@@ -127,7 +127,7 @@
 												<th><?=$tstatus?></th>
 												<!--<th><?=$tedittm?></th>-->
 												<th><?=$tedittm?></th>
-												<!--<th><?=$visits?></th>-->
+												<th><?=$visits?></th>
 												<th><?=$toperation?></th>
 											</tr>
 										</thead>
@@ -135,9 +135,9 @@
 											<?
 												foreach ($arrayList as $row){
 													if( strlen($row["top_tm"]) == 0)
-													echo "<tr><td><input type='checkbox' name='tyChecks' value='".$row["id"]."'/></td><td>".$row["block_name"]."</td><td class='ctx-title'><a onclick=edit('".$row["id"]."')>".$row["title"]."</a></td><td>".$content_sts[$row["sts"]]."</td><td>".btime($row["edit_tm"])."</td><td><a title=\"$tdelete\" onclick=del(".$row["id"].")><i class='fa fa-fw fa-trash-o'></i></a>&nbsp;&nbsp;<a title=\"$torecommend\" onclick=recommend('".$row["id"]."','1')><i class='fa fa-star'></i></a></td></tr>";
+													echo "<tr><td><input type='checkbox' name='tyChecks' value='".$row["id"]."'/></td><td>".$row["block_name"]."</td><td class='ctx-title'><a onclick=edit('".$row["id"]."')>".$row["title"]."</a></td><td>".$content_sts[$row["sts"]]."</td><td>".btime($row["edit_tm"])."</td><td>".$row["visits"]."</td><td><a title=\"$tdelete\" onclick=del(".$row["id"].")><i class='fa fa-fw fa-trash-o'></i></a>&nbsp;&nbsp;<a title=\"$torecommend\" onclick=recommend('".$row["id"]."','1')><i class='fa fa-star'></i></a></td></tr>";
 													else
-													echo "<tr><td><input type='checkbox' name='tyChecks' value='".$row["id"]."'/></td><td>".$row["block_name"]."</td><td class='ctx-title'><a onclick=edit('".$row["id"]."')>".$row["title"]."</a></td><td>".$content_sts[$row["sts"]]."</td><td>".btime($row["edit_tm"])."</td><td><a title=\"$tdelete\" onclick=del(".$row["id"].")><i class='fa fa-fw fa-trash-o'></i></a>&nbsp;&nbsp;<a title=\"$derecommend\" onclick=recommend('".$row["id"]."','')><i class='fa fa-download'></i></a></td></tr>";
+													echo "<tr><td><input type='checkbox' name='tyChecks' value='".$row["id"]."'/></td><td>".$row["block_name"]."</td><td class='ctx-title'><a onclick=edit('".$row["id"]."')>".$row["title"]."</a></td><td>".$content_sts[$row["sts"]]."</td><td>".btime($row["edit_tm"])."</td><td>".$row["visits"]."</td><td><a title=\"$tdelete\" onclick=del(".$row["id"].")><i class='fa fa-fw fa-trash-o'></i></a>&nbsp;&nbsp;<a title=\"$derecommend\" onclick=recommend('".$row["id"]."','')><i class='fa fa-download'></i></a></td></tr>";
 												}
 											?>
 										</tbody>
