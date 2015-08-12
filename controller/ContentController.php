@@ -150,7 +150,7 @@ class ContentController extends Controller{
 	}
 	
 	function editPage(){
-		$blockList = $this->block->getArrayList("block");
+		$blockList = $this->block->getBlocks();
 		$obj = $this->content->getRecordById($_GET['id']);
 		
 		//$obj["content"] = $obj["content"];
