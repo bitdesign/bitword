@@ -244,11 +244,15 @@ a:hover{
 
 .info-nav{
     padding:10px;
-    border-bottom: 1px solid #e5e5e5;
+   /*
+    border-bottom: 1px solid #e5e5e5; 
+    background: rgb(248,252,254);
+    background: rgb(246,246,246);
+   */
     color: #333;
     font-size: 14px;
     cursor: pointer;
-    background: rgb(248,252,254);
+    background: rgb(246,246,246);
 }
 
 
