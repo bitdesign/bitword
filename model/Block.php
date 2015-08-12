@@ -25,7 +25,7 @@ class Block extends BaseModel{
 	}
 	
 	public function getBlocks() {
-		$blocks = $this->db->queryForArray("(select a.*, b.usr_nm from block a left join users b on a.usr_id=b.usr_id) tmp");
+		$blocks = $this->db->queryForArray("(select a.*, b.usr_nm from block a left join users b on a.usr_id=b.usr_id order by edit_tm desc) tmp");
 		return $blocks;
 	}
 	public function getRecordById($id) {
