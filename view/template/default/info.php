@@ -185,7 +185,7 @@
     </div><!--container-->
 
 
-
+    <script type="text/javascript" src="<?=$webroot?>/Count!addVisits?id=<?=$obj['id']?>"></script>
 </body>
 
 

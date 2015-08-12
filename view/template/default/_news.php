@@ -1,7 +1,7 @@
 <div class="cat margin-top20">
-    <div class="cat-header"><p>近期文章</p></div>
+    <div class="cat-header"><p>推荐阅读</p></div>
     <ul>
-        <? foreach ($contentsNewTop as $obj){	?>
+        <? foreach ($contentsRecommend as $obj){	?>
         <li><a href="<?=$webroot.'/'.$tpl_name.'_'.$obj['id']?>.html" title="<?=$obj['title']?>"><?=$obj['title']?></a></li>
         <? } ?>
     </ul>
