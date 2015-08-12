@@ -80,7 +80,11 @@ class Content extends BaseModel{
 		$contents = $this->db->queryForArrayLimit("(select id,title from content where sts='1' order by visits desc limit 0,$maxNum) tmp","");
 		return $contents;
 	}
-
+    
+    public function getFirstBatchRecommend($maxNum=10) {
+		$contents = $this->db->queryForArrayLimit("(select id,title from content where  sts='1' and top_tm is not null order by top_tm desc limit 0,$maxNum) tmp","");
+		return $contents;
+	}
 }
 
 
