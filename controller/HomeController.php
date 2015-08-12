@@ -63,7 +63,7 @@ class HomeController{
 		}
 		
 		$indexMaxNum = $homemaxnum;
-		$table = "(select id,a.block_id,block_name,title,a.dsp_img,a.edit_tm,a.pub_tm,a.input_tm,usr_rnm,visits,top_tm,content_short  from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id = c.block_id where sts='1' ".$condition." order by  top_tm desc,edit_tm desc ) tmp";
+		$table = "(select id,a.block_id,block_name,title,a.dsp_img,a.edit_tm,a.pub_tm,a.input_tm,usr_rnm,visits,top_tm,content_short  from content a left join users b on a.usr_id=b.usr_id left join block c on a.block_id = c.block_id where sts='1' ".$condition." order by edit_tm desc ) tmp";
 		$pager = $this->getPager($table,$content->db,$indexMaxNum);
 		$contents = $pager->getData();
 		
@@ -110,7 +110,7 @@ class HomeController{
 		$content = new Content();	
 		$block = new Block();	
 		
-		$contentsNewTop = $content->getFirstBatchByTime($newmaxnum);
+		$contentsRecommend = $content->getFirstBatchRecommend($newmaxnum);
 		//$contentsVisitsTop = $content->getFirstBatchByVisits($topmaxnum);
 		$blocks = $block->getBlocksWithContentNum();
 		require("$tpl_root/_news.php");

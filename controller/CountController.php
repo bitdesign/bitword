@@ -9,12 +9,12 @@ class CountController{
 	public $logger = null;
 	
 	function __construct(){
-		//$this->content = new Content(); 
+		$this->content = new Content(); 
 		//$this->logger = LogUtil::getLogger();
 	}
 	
 	function addVisits(){
-	 // $this->content->addVisits($_GET['id']);
+	    $this->content->addVisits($_GET['id']);
 	}
 	
 }
