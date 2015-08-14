@@ -200,7 +200,7 @@ class AdminController extends Controller{
 		$contestIdListStr="";
 		
 		//first create news.html
-		$news_file_name = $tpl_root."/static/_news.html";
+		$news_file_name = "static/".$tpl_name."/_news.html";
 		ob_start();
 		$home->news();
 		$news_contents = ob_get_contents();
@@ -211,7 +211,7 @@ class AdminController extends Controller{
 		
 		
 		//first create _header_nav.html
-		$news_file_name = $tpl_root."/static/_header_nav.html";
+		$news_file_name = "static/".$tpl_name."/_header_nav.html";
 		ob_start();
 		$home->headerNav();
 		$news_contents = ob_get_contents();
@@ -223,7 +223,7 @@ class AdminController extends Controller{
 		
 		//create a static html for each article
 		foreach ($contents as $content){
-			$fname = $tpl_root."/static/".$content['id'].".html";
+			$fname = "static/".$tpl_name."/".$content['id'].".html";
 			ob_start();
 			$_GET["id"] = $content['id'];
 			$contestIdListStr .= $content['id'].",";
@@ -238,8 +238,8 @@ class AdminController extends Controller{
 		//create a static html for each block
 		$block = new Block(); 
 		$blocks = $block->getBlocksWithContentNum();
-		foreach ($blocks as $blockObj){
-			$fname = $tpl_root."/static/b".$blockObj['block_id'].".html";
+		foreach ($blocks as $blockObj){ 
+			$fname = "static/".$tpl_name."/b".$blockObj['block_id'].".html";
 			$_GET['block_id'] = $blockObj['block_id'];
 			ob_start();
 			$home->index();  //php after render ,all mysql connections will be reset

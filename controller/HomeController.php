@@ -70,7 +70,7 @@ class HomeController{
 		//$feeds = $feed->getFeeds();
 		//$logo = "$webroot/upload/$logo";
         
-        include_once "config/translate.php"; 
+        include_once "translate/translate.php"; 
         include_once "lib/Functions.php";
         include_once "lib/StringUtil.php";
         

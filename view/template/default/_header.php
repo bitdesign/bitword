@@ -5,7 +5,7 @@
     <div class="words">
         世界的另外一些地方需要我去献出我微薄的力量 -- CHE.格瓦拉
     </div>
-    <? include "$tpl_root/static/_header_nav.html"; ?>
+    <? include "static/$tpl_name/_header_nav.html"; ?>
 </div>
 
 
