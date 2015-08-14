@@ -116,3 +116,12 @@ $tpleaselogin = "请登录" ;
 $tlogin = "登录" ;
 $tremember = "记住密码" ;
 
+
+$content_count = "文章数";
+$block_count = "分类数";
+$os_ver = "操作系统";
+$webserver = "中间件";
+$visits_count = "总PV/UV";
+$ips = "IP统计(今/昨)";
+$server_ip = "服务器IP";
+$domain_name = "域名";

@@ -116,4 +116,11 @@ $tpleaselogin = "Please signin";
 $tlogin = "Signin";
 $tremember = "Rememberme";
 
-
+$content_count = "Articles";
+$block_count = "Categories";
+$os_ver = "OS Version";
+$webserver = "WebServer";
+$visits_count = "Total PV/UV";
+$ips = "IP Today/Yesterday";
+$server_ip = "Server IP";
+$domain_name = "Domain Name";
