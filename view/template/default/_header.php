@@ -1,6 +1,6 @@
 <div class="header">
     <div class="logo">
-        <a class="logo" href="<?=$webroot?>/index.html"><img src="<?=$webroot.'/upload/'.$logo ?>" width="100%"/></a>
+        <a class="logo" href="<?=$webroot?>/index.html"><img src="<?=$webroot.'/upload/'.$logo ?>" /></a>
     </div>
     <div class="words">
         世界的另外一些地方需要我去献出我微薄的力量 -- CHE.格瓦拉
