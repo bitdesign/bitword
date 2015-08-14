@@ -1,0 +1,25 @@
+	rewrite ^/([a-zA-Z]+)!([a-zA-Z]+)$ /router.php?c=$1&m=$2 last;
+	rewrite ^/([a-zA-Z]+)!([a-zA-Z]+)\?([*]+)$ /router.php?c=$1&m=$2&$3 last;
+	rewrite ^/([a-zA-Z0-9]+)_([a-zA-Z0-9]+).html$ /static/$1/$2.html last;
+	#rewrite ^/admin$ /admin!dashboard last;
+	if ($request_uri ~* backup/.*) {
+	    return 403;
+	}
+	if ($request_uri ~* config/(.*).(php)$) {
+	    return 403;
+	}
+	if ($request_uri ~* controller/(.*).(php)$) {
+	    return 403;
+	}
+	if ($request_uri ~* log/.*) {
+	    return 403;
+	}
+	if ($request_uri ~* model/(.*).(php)$) {
+	    return 403;
+	}
+	if ($request_uri ~* ui/(.*).(php)$) {
+	    return 403;
+	}
+	if ($request_uri ~* install/(.*).(sql)$) {
+	    return 403;
+	}
