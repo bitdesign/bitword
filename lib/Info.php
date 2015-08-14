@@ -194,16 +194,18 @@ class Info{
 	
 	
 	function get_server_ip(){
+	    
+	    
 		if (isset($_ENV["HOSTNAME"]))
 		$MachineName = $_ENV["HOSTNAME"];
 		else if  (isset($_ENV["COMPUTERNAME"]))
 		$MachineName = $_ENV["COMPUTERNAME"];
 		else $MachineName = $_SERVER["SERVER_NAME"];
-		return  GetHostByName($MachineName);
+		return  GetHostByName($MachineName); //该函数特别慢 1到5秒 和网络有关
 	}
 	
 	function get_server_info(){
-		return array('os_ver'=>php_uname(),'server_ip'=>$this->get_server_ip(),'webserver'=>$_SERVER['SERVER_SOFTWARE'],'domain_name'=>$_SERVER['SERVER_NAME']);
+		return array('os_ver'=>php_uname(),'server_ip'=>"",'webserver'=>$_SERVER['SERVER_SOFTWARE'],'domain_name'=>$_SERVER['SERVER_NAME']);
 	}
 }
 
