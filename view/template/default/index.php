@@ -106,6 +106,6 @@
         </div>
 
 
-        <script type="text/javascript" src="<?=$webroot?>/Count!addIPVisits?>"></script>
+        <script type="text/javascript" src="<?=$webroot?>/Count!addIPVisits"></script>
     </body>
 </html>
