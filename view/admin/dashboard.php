@@ -96,9 +96,10 @@
 									<div class="col-lg-12">
 										<table class="table table-bordered table-striped" id="statistics">
 											<tbody>
-												<tr><th><?=$ips?></th><td><?=$obj['ips'].'/'.$obj['yips']?></td><th><?=$visits_count?></th><td><?=$obj['tips']?></td></tr>
-												<tr><th><?=$os_ver?></th><td><?=$obj['os_ver']?></td><th><?=$server_ip?></th><td><?=$obj['server_ip']?></td></tr>
-												<tr><th><?=$webserver?></th><td><?=$obj['webserver']?></td><th><?=$domain_name?></th><td><?=$obj['domain_name']?></td></tr>
+												<tr><th><?=$content_count?></th><td><?=$obj['content_count']?></td><th><?=$visits_count?></th><td><?=$obj['visits_count'].'/'.$obj['tips']?></td></tr>
+												<tr><th><?=$block_count?></th><td><?=$obj['block_count']?></td><th><?=$ips?></th><td><?=$obj['ips'].'/'.$obj['yips']?></td></tr>
+												<tr><th><?=$os_ver?></th><td><?=$obj['os_ver']?></td><th><?=$domain_name?></th><td><?=$obj['domain_name']?></td></tr>
+												<tr><th><?=$webserver?></th><td><?=$obj['webserver']?></td><th></th><td></td></tr>
 											</tbody>
 										</table>
 									</div>
@@ -114,9 +115,6 @@
 					<!-- /#wrapper -->
 
 					<!-- jQuery -->
-					<!-- Morris Charts JavaScript -->
-					<script src="js/plugins/morris/raphael.min.js"></script>
-					<script src="js/plugins/morris/morris.min.js"></script>
-					<script src="js/plugins/morris/morris-data.js"></script>
+					
 				</body>
 			</html>
