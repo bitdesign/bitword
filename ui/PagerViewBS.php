@@ -1,3 +1,4 @@
+<!-- script 和 style 分别移到主题的 defualt.js 和 simple.css
 			<script language="JavaScript">
 				$(function(){
 						$("#navdiv a").click(function(){
@@ -23,7 +24,7 @@
 					height:20px; line-height:20px; float:left;padding:0 7px; margin:0 1px;display:block;
 				}
 			</style>
-			
+-->			
 			<input name='oldPerPageCnt' type='hidden' value='<?=$this->oldPerPageCnt?>'/>
 			<input name='skipValue' id='skipValue' type='hidden' value="<?=$this->pageNo?>"/>
 			
