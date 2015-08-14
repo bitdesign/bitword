@@ -123,7 +123,7 @@ class HomeController{
 		require_once('model/Block.php');
 		$block = new Block();	
 		
-		$blocks = $block->getBlocksWithContentNum();
+		$blocks = $block->getBlocks();
 		require("$tpl_root/_header_nav.php");
 	}
 	
