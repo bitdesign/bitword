@@ -66,13 +66,12 @@ class AdminController extends Controller{
 	
 	function dashboard(){
 		// content_count   visits_count   block_count   replies_count  os_ver server_ip webserver domain_name
-		//$table = "(select (SELECT COUNT(1) FROM content) content_count,(SELECT sum(visits) FROM content) visits_count,(SELECT COUNT(1) FROM block) block_count,(SELECT COUNT(1) FROM replies) replies_count  from dual) tmp";
-		//$model = new BaseModel();
-		//$sys_info = $model->getRecord($table);
+		$table = "(select (SELECT COUNT(1) FROM content) content_count,(SELECT sum(visits) FROM content) visits_count,(SELECT COUNT(1) FROM block) block_count,(SELECT COUNT(1) FROM replies) replies_count  from dual) tmp";
+		$model = new BaseModel();
+		$sys_info = $model->getRecord($table);
 		$info = new Info();
 		$serv_info = $info->get_server_info();
-		//$obj = array_merge($sys_info,$serv_info);
-		$obj = array_merge($serv_info);
+		$obj = array_merge($sys_info,$serv_info);
 		
 		$obj['yips'] = $this->getYIPs();
 		$obj['ips'] = $this->getIPs();
