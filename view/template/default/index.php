@@ -89,7 +89,7 @@
                 <div class="main-right">
 
 
-                    <? include "static/$tpl_name/_news.html";?>
+                    <? include "static/".$tpl_name."/_news.html";?>
                     <!--
                     <? //include "_news.php";?>
                     <? //include "_words.php";?>

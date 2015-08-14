@@ -6,6 +6,6 @@
 
 <script language="javascript" type="text/javascript">
     window.onload = function(){ 
-        document.getElementById("TimeShow").innerHTML = "¼ÓÔØºÄÊ±"+ (new Date().getTime()-reqTime)/1000 +"s"; 
+        document.getElementById("TimeShow").innerHTML = "åŠ è½½è€—æ—¶"+ (new Date().getTime()-reqTime)/1000 +"s"; 
     } 
 </script>

@@ -271,7 +271,7 @@ class AdminController extends Controller{
 		$home = new HomeController(); 
 		
 		//first create news.html
-		$news_file_name = $tpl_root."/static/_news.html";
+		$news_file_name = "static/".$tpl_name."_news.html";
 		ob_start();
 		$home->news();
 		$news_contents = ob_get_contents();
@@ -285,7 +285,7 @@ class AdminController extends Controller{
 		
 		
 		//create a static html for this article
-		$fname = $tpl_root."/static/".$contentId.".html";
+		$fname = "static/".$tpl_name."/".$contentId.".html";
 		
 		//$logger->info($fname);
 		
@@ -303,7 +303,7 @@ class AdminController extends Controller{
 		
 		//create a static html for this article's block
 			
-		$fname = $tpl_root."/static/b".$blockId.".html";
+		$fname = "static/".$tpl_name."/b".$blockId.".html";
 		$_GET['block_id'] = $blockId;
 		ob_start();
 		$home->index();  //php after render ,all mysql connections will be reset
