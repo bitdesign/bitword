@@ -34,7 +34,7 @@ class Pager {
 	
 	function  getHtml($viewPage="PagerView.php"){
 		
-		 require("config/translate.php");
+		 require("translate/translate.php");
 		 require($viewPage);
 	}
 	
