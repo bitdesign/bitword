@@ -123,7 +123,7 @@ class ContentController extends Controller{
 		
 		$_POST["content_short"] = plainSubText($_POST["content"],200);
     
-        $_POST["content"]= addslashes($_POST["content"]);
+        //$_POST["content"]= addslashes($_POST["content"]);
         
         //$logger->info("1 isertid=". $_POST["id"]); 
         

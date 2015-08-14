@@ -9,7 +9,7 @@ class CountController{
     public $logger = null;
 
     function __construct(){
-        //$this->content = new Content();
+        $this->content = new Content();
         //$this->logger = LogUtil::getLogger();
     }
 

@@ -92,7 +92,7 @@ class HomeController{
 		$content = new Content();	
 		$contentId = $_GET['id'];
 		$obj = $content->getRecordById($contentId);
-		$obj["link"] = "http://".$_SERVER['HTTP_HOST']."/".$tpl_name."_".$contentId.".html";
+		//$obj["link"] = "http://".$_SERVER['HTTP_HOST']."/".$tpl_name."_".$contentId.".html";
 			
 		$table = "(select a.*  from replies a where par_id=".$contentId." order by input_tm desc ) mytable";
 		$reply = new Reply(); 
@@ -100,6 +100,7 @@ class HomeController{
 		$pager = $this->getPager($table,$reply->db,$replyPegeNum);
 		$msgList = $pager->getData();
 		
+		$domain_name = $_SERVER['SERVER_NAME'];
 		require("$tpl_root/info.php");
 	}
 	
