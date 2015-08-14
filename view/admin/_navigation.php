@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">BIT Console</a>
+        <a class="navbar-brand" href="index.html" target="_blank">BIT Console</a>
     </div>
     <!-- Top Menu Items -->
 
