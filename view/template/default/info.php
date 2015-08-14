@@ -186,6 +186,10 @@
 
 
     <script type="text/javascript" src="<?=$webroot?>/Count!addVisits?id=<?=$obj['id']?>"></script>
+    <script language="javascript" type="text/javascript">
+        document.oncontextmenu=new Function('event.returnValue=false;');
+        document.onselectstart=new Function('event.returnValue=false;');
+    </script>
 </body>
 
 
