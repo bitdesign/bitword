@@ -19,7 +19,7 @@
         <li><a href="/content!listPage" title="">登录</a></li>
         <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a>@<a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
         <li><a href="mailto:bitword@163.com?subject=&body=" title="">MailToME</a></li>
-        <li style="list-style-type:none;"><img src="/<?=$tpl_root.'/images/transparent.gif'?>" data-original="/<?=$tpl_root?>/images/qr.png" style="width:96%;" class="panel-img"/></li>
+        <li style="list-style-type:none;"><img src="<?=$webroot.'/upload/image/transparent.gif'?>" data-original="/<?=$tpl_root?>/images/qr.png" style="width:96%;" class="panel-img"/></li>
     </ul>
 
 </div>

@@ -14,6 +14,56 @@ class AdminController extends Controller{
 		parent::__construct();
 	}
 	
+	
+	//今天的IP数
+	function getIPs(){
+	    
+	    $file_name = date("Ymd");
+	    
+	    $file_name = "count/$file_name";
+	    
+	    return $this->getIPCount($file_name);
+	}
+	
+	//昨天的IP数
+	function getYIPs(){
+	    
+	    
+	    $file_name = "count/yesterday";
+	    
+	    return $this->getIPCount($file_name);
+	}
+	
+	//全部IP
+	function getTotIPs(){
+	    
+	    $file_name = date("Ymd");
+	    
+	    $file_name = "count/history";
+	    
+	    return $this->getIPCount($file_name);
+	}
+	
+	
+	function getIPCount($file_name){
+	    
+	     if( !file_exists ( $file_name ) ){
+	        
+	        return 0;
+	     }
+	    
+	    $fp = fopen($file_name,"r");
+	    $ori_str = fread ($fp, filesize($file_name));
+	    
+	    preg_match_all( "/,/", $ori_str,$out);
+	    
+		fclose($fp);
+		
+		return sizeof($out[0]); 
+	    
+	}
+	
+	
 	function dashboard(){
 		// content_count   visits_count   block_count   replies_count  os_ver server_ip webserver domain_name
 		$table = "(select (SELECT COUNT(1) FROM content) content_count,(SELECT sum(visits) FROM content) visits_count,(SELECT COUNT(1) FROM block) block_count,(SELECT COUNT(1) FROM replies) replies_count  from dual) tmp";
@@ -22,6 +72,11 @@ class AdminController extends Controller{
 		$info = new Info();
 		$serv_info = $info->get_server_info();
 		$obj = array_merge($sys_info,$serv_info);
+		
+		$obj['yips'] = $this->getYIPs();
+		$obj['ips'] = $this->getIPs();
+		$obj['tips'] = $this->getTotIPs();
+		
 		require('view/admin/dashboard.php');
 	}
 	

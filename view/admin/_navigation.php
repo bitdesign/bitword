@@ -29,19 +29,31 @@
 
     <ul class="nav navbar-nav navbar-right navbar-user">
         
-       <!--
         <li class="dropdown">
-            <a onclick="doPublic(1);"><i class="fa fa-fw fa-share-square-o"></i> <?=$ttopublish?> </a>
+            <a href="admin!dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
         </li>
-        -->
-        
+
         <li class="dropdown">
-            <a href="index.html" target="_blank"><i class="fa fa-fw fa-home"></i> <?=$thomepage?> </a>
-        </li>
-        <li class="dropdown">
-            <a href="Login!logout" target="_self"><i class="fa fa-power-off"></i> <?=$tlogout?>&nbsp;&nbsp;</a>
-            
-        </li>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			    <i class="fa fa-user"></i> <?=$_SESSION['loginuser']['usr_nm']?> <b class="caret"></b>&nbsp;&nbsp;</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="admin!changePassWordPage"><i class="fa fa-fw fa-lock"></i>&nbsp;<?=$tpassword?></a>
+				</li>
+				<li>
+					<a href="Login!logout" target="_self"><i class="fa fa-power-off"></i>&nbsp; <?=$tlogout?></a>
+				</li>
+				<li class="divider"></li>
+				<li>
+    				<a href="admin!theme"><i class="fa fa-fw fa-desktop"></i> <?=$ttheme?></a>
+    			</li>
+    			<li>
+                    <a href="replies!listPage"><i class="fa fa-fw fa-comment"></i> <?=$treplies?></a>
+                </li>
+			</ul>
+		</li>
+		
+   
     </ul>
 
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -61,25 +73,16 @@
             <li>
                 <a href="block!listPage"><i class="fa fa-fw fa-th-large"></i> <?=$tblock?></a>
             </li>
-            <li>
-                <a href="replies!listPage"><i class="fa fa-fw fa-comment"></i> <?=$treplies?></a>
-            </li>
+           
             
             <li>
 				<a href="setting!settingPage"><i class="fa fa-fw fa-wrench"></i> <?=$tsetting?></a>
 			</li>
 			
-			<li>
-				<a href="admin!theme"><i class="fa fa-fw fa-desktop"></i> <?=$ttheme?></a>
-			</li>
+			
 			
 			<li>
 				<a href="admin!data"><i class="fa fa-fw fa-database"></i> <?=$tdatamng?></a>
-			</li>
-			
-			
-			<li>
-				<a href="admin!changePassWordPage"><i class="fa fa-fw fa-lock"></i> <?=$tpassword?></a>
 			</li>
 			
 
