@@ -1,4 +1,4 @@
-<? include "config/translate.php"; ?>
+<? include "translate/translate.php"; ?>
 <? include "lib/Functions.php"; ?>
 <? include "config/site.php"; ?>
 <meta charset="utf-8">

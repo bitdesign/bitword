@@ -47,7 +47,7 @@ class AdminController extends Controller{
 	
 	function getIPCount($file_name){
 	    
-	     if( !file_exists ( $file_name ) ){
+	     if( !file_exists ( $file_name ) || filesize($file_name)==0 ){
 	        
 	        return 0;
 	     }
@@ -105,7 +105,7 @@ class AdminController extends Controller{
 	function backup(){
 		include "config/config.php";
 		include "config/site.php";
-		$curTm = date("YmdHis",time());
+		$curTm = date("Y-m-d",time());
 		$model = new BaseModel();
 		$model->db->backup($mysql_dbname,"backup/".$mysql_dbname."_".$curTm.".sql","data");
 		echo "true";
