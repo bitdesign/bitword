@@ -28,14 +28,14 @@
 
 
     <ul class="nav navbar-nav navbar-right navbar-user">
-        
+        <!--
         <li class="dropdown">
             <a href="admin!dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
         </li>
-
+        -->
         <li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			    <i class="fa fa-user"></i> <?=$_SESSION['loginuser']['usr_nm']?> <b class="caret"></b>&nbsp;&nbsp;</a>
+			    <i class="fa fa-user"></i> <?=$_SESSION['loginuser']['usr_rnm']?> <b class="caret"></b>&nbsp;&nbsp;</a>
 			<ul class="dropdown-menu">
 				<li>
 					<a href="admin!changePassWordPage"><i class="fa fa-fw fa-lock"></i>&nbsp;<?=$tpassword?></a>
@@ -60,7 +60,12 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav" id="side-menu-nav">
-
+            
+            
+            <li class="dropdown">
+                 <a href="admin!dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+            </li>
+            
             <li class="dropdown">
                 <a href="Content!editPage"><i class="fa fa-fw fa-pencil"></i> <?=$taddarticle?> </a>
             </li>
