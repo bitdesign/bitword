@@ -124,3 +124,5 @@ $visits_count = "Total PV/UV";
 $ips = "IP Today/Yesterday";
 $server_ip = "Server IP";
 $domain_name = "Domain Name";
+
+$stat_info = "Dashboard";

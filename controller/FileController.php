@@ -3,6 +3,7 @@ require_once('Controller.php');
 require_once('lib/LogUtil.php');
 require_once('lib/ZipUtil.php');
 require_once('lib/Functions.php');
+require_once('config/config.php');
 class FileController extends Controller{
 
     public $logger;
@@ -30,7 +31,7 @@ class FileController extends Controller{
 
                 move_uploaded_file($file,$dst_file);
 
-                echo $dst_file;
+                echo $webroot."/".$dst_file;
             }
             else
             {

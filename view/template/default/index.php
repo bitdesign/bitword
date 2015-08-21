@@ -24,10 +24,10 @@
             <div class="panel margin-top20">
 
               <div class="panel-header">
-                <a href="<?=$tpl_name.'_'.$content['id']?>.html" >
+                <a href="<?=$webroot.'/static/'.$tpl_name.'/'.$content['id']?>.html" >
                   <?=$content["title"]?>
                   <? if(isset($content["top_tm"]) ){ ?>
-                  <img src="<?=$tpl_root?>/images/reco.gif" width="17" height="19"/>
+                  <img src="<?=$webroot.'/'.$tpl_root?>/images/reco.gif" width="17" height="19"/>
                   <? } ?>
                 </a>
               </div>

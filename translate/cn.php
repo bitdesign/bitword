@@ -125,3 +125,5 @@ $visits_count = "总PV/UV";
 $ips = "IP统计(今/昨)";
 $server_ip = "服务器IP";
 $domain_name = "域名";
+
+$stat_info = "统计信息";

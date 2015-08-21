@@ -2,7 +2,7 @@
     <div class="cat-header"><p>推荐阅读</p></div>
     <ul>
         <? foreach ($contentsRecommend as $obj){	?>
-        <li><a href="<?=$webroot.'/'.$tpl_name.'_'.$obj['id']?>.html" title="<?=$obj['title']?>"><?=$obj['title']?></a></li>
+        <li><a href="<?=$webroot.'/static/'.$tpl_name.'/'.$obj['id']?>.html" title="<?=$obj['title']?>"><?=$obj['title']?></a></li>
         <? } ?>
     </ul>
 
@@ -10,7 +10,7 @@
     <div class="cat-header"><p>分类目录</p></div>
     <ul>
         <? foreach ($blocks as $obj){	?>
-        <li><a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html" title="<?=$obj['block_name']?>"><?=$obj['block_name'].' ('.$obj['content_num'].')'?></a></li>
+        <li><a href="<?=$webroot.'/static/'.$tpl_name.'/b'.$obj['block_id']?>.html" title="<?=$obj['block_name']?>"><?=$obj['block_name'].' ('.$obj['content_num'].')'?></a></li>
         <? } ?>
     </ul>
 

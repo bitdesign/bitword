@@ -62,11 +62,11 @@
         <ul class="nav navbar-nav side-nav" id="side-menu-nav">
             
             
-            <li class="dropdown">
-                 <a href="admin!dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+            <li>
+                 <a href="admin!dashboard"><i class="fa fa-fw fa-dashboard"></i> <?=$stat_info?></a>
             </li>
             
-            <li class="dropdown">
+            <li>
                 <a href="Content!editPage"><i class="fa fa-fw fa-pencil"></i> <?=$taddarticle?> </a>
             </li>
 

@@ -18,7 +18,7 @@
 
     <?
     $site_url = "http://".$_SERVER['SERVER_NAME'];
-    $fix_url = $site_url."/".$tpl_name.'_'.$obj['id'].".html";
+    $fix_url = $site_url.$webroot."/static/".$tpl_name.'/'.$obj['id'].".html";
     ?>
 
     <div class="main" >
@@ -27,9 +27,9 @@
 
         <div class="row margin-top20">
           <div class="info-nav">
-            <a href="<?=$webroot?>index.html"><i class="fa fa-fw fa-home"></i>首页</a>&gt;
-            <a href="<?=$webroot.'/'.$tpl_name.'_b'.$obj['block_id']?>.html"><?=$obj["block_name"]?></a>&gt;
-            <a href="<?=$tpl_name.'_'.$obj['id']?>.html" ><?=$obj["title"]?></a>
+            <a href="<?=$webroot?>/index.html"><i class="fa fa-fw fa-home"></i>首页</a>&gt;
+            <a href="<?=$webroot.'/static/'.$tpl_name.'/b'.$obj['block_id']?>.html"><?=$obj["block_name"]?></a>&gt;
+            <a href="<?=$fix_url?>" ><?=$obj["title"]?></a>
           </div>
           <div class="info-title">
             <h4><?=$obj["title"]?></h4>
