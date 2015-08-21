@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BitCMS</title>
+  <head>
+    <title>比特核 - 独立游戏人</title>
+    <meta name="Keywords" content="比特核 独立游戏人" />
+    <meta name="Description" content="比特核 独立游戏人" />
+
+    <script language="javascript" type="text/javascript">
+    var reqTime = new Date().getTime(); 
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="BitCMS" />
-<meta name="Description" content="BitCMS" />
-
-<link href="view/public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+<!--
 <link href="view/public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
-
+-->
 <link href="/view/template/default/css/simple.css" rel="stylesheet" type="text/css" media="screen" />
 
-<!--[if lt IE 9]>
-	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
-	<script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
 
-<script type="text/javascript" src="view/public/js/jquery.js"></script>
-<script type="text/javascript" src="view/public/js/jquery.form.js"></script>
-<script type="text/javascript" src="view/public/js/jquery.validate.js"></script>
-<script type="text/javascript" src="view/public/js/base64.js"></script>
-<script type="text/javascript" src="view/public/js/bit.js"></script>
-<script type="text/javascript" src="view/public/js/jquery.mousewheel.min.js"></script>    </head>
-    <body>
-        <div class="container container-ext">
 
-            <div class="container container-ext navbar  navbar-static-top" role="navigation" style="margin-bottom:0px;border-bottom: 1px solid #ccc;padding:5px 0px!important;">
-    <div class="navbar-header">
-        <a class="zero" href="/index.html"><img src="/upload/logo.png" /></a>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="header">
+    <div class="logo">
+        <a class="logo" href="/index.html"><img src="/upload/logo.png"/></a>
     </div>
-    <ul class="nav navbar-nav navbar-right" >
-        <li><a class="header-text" href="/index.html">Homepage</a></li>
-        <li><a class="header-text" href="/content!listPage" target="_blank">Console</a></li>
-    </ul>
+    <div class="words">
+        世界的另外一些地方需要我去献出我微薄的力量 -- CHE.格瓦拉
+    </div>
+    <ul class="nav" >
+               <li><a href="/static/default/b2.html" title="网站建设">网站建设</a></li>
+            </ul></div>
+
+
+<div id="float" style="bottom: -300px;">
+    <a id="float_gotop" class="floatbtn" href="#header" onclick="goRoll(0)" title="返回顶部" style="opacity: 0.7;"></a>
+    <a class="linbak floatbtn" href="/admin!dashboard" title="登陆&amp;注册" style="opacity: 0.7;"></a>
+    <a id="float_goend" class="floatbtn" href="javascript:void()" onclick="goend()" title="转到底部"></a>
 </div>
 
-<hr style="border-top: 1px solid #f6f6f6;margin-top:0px;"/>
 
 
 
 
 
 
-            <div class="row" >
+      <div class="main" >
 
-                <div class="col-xs-12 col-sm-9 double-right-padding">
-                    <form  method="post" action="Home!index">
-                                               
-                        <div class="panel panel-default noradius noborder">
+        <div class="main-left">
+          <form  method="post" action="Home!index">
+            
+            <div class="panel margin-top20">
 
+              <div class="panel-header">
+                <a href="/static/default/52.html" >
+                  欢迎页                                  </a>
+              </div>
 
-                            <div class="row list-group-item  row-ext zero noradius coverline"  style="padding:6px 10px;">
-                                
-                                <div class="panel-heading">
-                                    <h2 class="panel-title"><a href="default_1.html" >Welcome to BitCMS</a></h2>
-                                </div>
-                                                            <div class="col-xs-12 col-sm-12">
-                                    <p class="list-group-item-text">
-                                         BitCMS is a super lightweight blog software for minimalist paranoia.                                    </p>
-                                </div>
-                                 
-                                <div class="col-xs-12 col-sm-12">
-                                    <hr/>
-                                    <h5><i class="fa fa-fw fa-user"></i>admin&nbsp;&nbsp;&nbsp;
-                                        <!--<i class="fa fa-fw fa-pencil-square-o"></i>2015-06-26&nbsp;&nbsp;&nbsp;-->
-                                        <i class="fa fa-fw fa-clock-o"></i>2015-06-26 03:22:58                                     </h5>
-                                 </div>
+                            <div class="panel-body">
+                <p class="panel-text">
+                  使用BITWORD, 微语博客专家。                </p>
+              </div>
+              
+              <div class="panel-footer">
+                <hr/>
+                <i class="fa fa-fw fa-hand-o-right"></i>网站建设&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-fw fa-user"></i>Administrator&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-fw fa-clock-o"></i>2015-08-21              </div>
 
-                            </div>
-
-                            
-                        </div>
-                                               			<script language="JavaScript">
+            </div>
+                        <!-- script �� style �ֱ��Ƶ������ defualt.js �� simple.css
+			<script language="JavaScript">
 				$(function(){
 						$("#navdiv a").click(function(){
 								clickId = $(this).attr("id");
@@ -97,58 +96,107 @@
 					height:20px; line-height:20px; float:left;padding:0 7px; margin:0 1px;display:block;
 				}
 			</style>
-			
+-->			
 			<input name='oldPerPageCnt' type='hidden' value='50'/>
 			<input name='skipValue' id='skipValue' type='hidden' value="1"/>
 			
 			<div id="navdiv">
 								
 			</div>
-                    </form>
-                </div>
+          </form>
+        </div>
 
-                <div class="col-xs-12 col-sm-3 no-left-padding">
-                   <div class="panel noradius noborder">
-   
-   <div class="panel-heading panel-heading-ext">Latest</div>
-  
-   <ul class="list-group list-group-ext">
-				<li><a href="/default_1.html" title="Welcome to BitCMS">Welcome to BitCMS</a></li>
-		   </ul>
-   <div class="blank20"></div>
+        <div class="main-right">
 
-  <div class="panel-heading panel-heading-ext">Archivement</div>
-   <ul class="list-group list-group-ext">
-				<li><a href="/default_b1.html" title="Share">Share (1)</a></li>
-		   </ul>
-    <div class="blank20"></div>
-   
-   
-   <div class="panel-heading panel-heading-ext">Link</div>
-   <ul class="list-group list-group-ext">
-		<li><a href="http://www.bit1010.com" title="">www.bit1010.com</a></li>
-		<li><a href="https://github.com/bitdesign/bitcms" title="">GitHub</a></li>
-   </ul>
-    <div class="blank20"></div>
-    
+
+          <div class="cat margin-top20">
+    <div class="cat-header"><p>推荐阅读</p></div>
+    <ul>
+            </ul>
+
+
+    <div class="cat-header"><p>分类目录</p></div>
+    <ul>
+            </ul>
+
+    <div class="cat-header"><p>功能</p></div>
+    <ul>
+        <li><a href="/content!listPage" title="">登录</a></li>
+        <li><a href="https://github.com/bitdesign/bitword/archive/master.zip" title="">BitWord</a>@<a href="https://github.com/bitdesign/bitword" title="">GitHub</a></li>
+        <li><a href="mailto:bitword@163.com?subject=&body=" title="">MailToME</a></li>
+        <li style="list-style-type:none;"><img src="/upload/image/transparent.gif" data-original="/view/template/default/images/qr.png" style="width:96%;" class="panel-img"/></li>
+    </ul>
+
 </div>
-                    <!--
-                    
-                                                            -->
-                    
-                </div>
-
-            </div>
-
-
-
-            <footer>
-  <p>&nbsp; &copy; BIT1010 2014 All Rights Reserved .  Powered by <a href="http://www.bit1010.com">BITCMS v1.0</a></p>
-</footer>
+          <!--
+                              -->
 
         </div>
 
+      </div>
 
 
-    </body>
+
+      <div class="footer">
+    <span id="TimeShow"></span>
+    &copy; BIT1010 2014 All Rights Reserved .  Powered by <a href="http://www.bit1010.com">BITWORD v1.0</a>
+    
+</div>
+
+<script language="javascript" type="text/javascript">
+    window.onload = function(){ 
+        document.getElementById("TimeShow").innerHTML = "加载耗时"+ (new Date().getTime()-reqTime)/1000 +"s"; 
+    } 
+</script>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+  
+  
+<!--
+<script type="text/javascript" src="view/public/js/jquery.js"></script>
+<script type="text/javascript" src="view/public/js/jquery.form.js"></script>
+<script type="text/javascript" src="view/public/js/jquery.lazyload.min.js"></script>
+-->
+<script type="text/javascript" src="/view/template/default/js/defualt.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7d31d9fa69f80346d831e707f6ba1149";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    </div>
+
+
+    <script type="text/javascript" src="/Count!addIPVisits"></script>
+  </body>
 </html>
+<script language="javascript" type="text/javascript">
+  $(document).ready(function() {
+    $("img.panel-img").lazyload();
+
+
+    var hasMoved = 0;
+    $(window).scroll(function () {
+
+      offset = $(window).scrollTop();
+      if (offset >0) {
+        if( hasMoved == 0){
+          $("#float").animate( {bottom:'100px'});
+          hasMoved = 1;
+        }
+
+      }else{
+        if( hasMoved == 1){
+          $("#float").animate( {bottom:'-300px'});
+          hasMoved = 0;
+        }
+      }
+    });
+  });
+</script>
