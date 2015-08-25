@@ -1,24 +1,7 @@
 <?
 class HomeController{
 	
-	function myAll(){
-	    session_start();
-		if(!isset($_SESSION['loginuser']))
-		{
-			Header("Location: Login!index");
-		}
-		include "config/site.php";
-		
-		require_once('model/Feed.php');
-
-		$logo = "$webroot/upload/$logo";
-		$headimg = "$webroot/upload/$headimg";
-		$feed = new Feed();
-		$feeds = $feed->getFeeds();
-		
-		$viewPage = "index_all.php";
-		require("$tpl_root/$viewPage");
-	}
+	
 	
 	function rssOne(){
 	    session_start();

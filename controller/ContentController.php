@@ -41,6 +41,10 @@ class ContentController extends Controller{
 		}
 
 		$table = "(select a.*,b.block_name,c.usr_nm from content a left join block b on a.block_id=b.block_id left join users c on a.usr_id=c.usr_id where a.sts in (".formatString($sts).") and a.title like '%".$postTile."%' and b.block_name like '%".$postBlockName."%' order by edit_tm desc) mytable";
+		
+		
+		$this->logger = LogUtil::getLogger();
+		$this->logger->info($table);
 		$pager = parent::getPager($table,$this->content->db);
 		$arrayList = $pager->getData();
 		$blockList = $this->block->getBlocks();
@@ -83,6 +87,8 @@ class ContentController extends Controller{
 		$_POST["pub_tm"]= addslashes(base64_decode($_POST["pub_tm"]));
 		$_POST["link"]= addslashes(base64_decode($_POST["link"]));
 	    
+	    
+	    $_POST["block_id"]= "0";
 		
 		if(!isset($_POST["keyword"])){
 			$_POST["keyword"] = $_POST["title"];
@@ -91,8 +97,10 @@ class ContentController extends Controller{
 		$_POST["content_short"] = plainSubText($_POST["content"],200);
 
 		$this->content->save();
-		echo "true";
-		
+		//$arr = array ('code'=> 'true','id'=>$_POST["id"]); 
+
+        //echo json_encode($arr); 
+		 echo "true";
 		//$adminController = new AdminController();
 		//$adminController->publishStaticIndex();
 	}

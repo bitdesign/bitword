@@ -32,7 +32,7 @@ CREATE TABLE `rssfeeds` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 CREATE TABLE `block` (
-  `block_id` int(11) NOT NULL auto_increment,
+  `block_id` int(11) NOT NULL,
   `block_name` varchar(256) NOT NULL,
   `dsp_img` varchar(256) default NULL,
   `block_order` int(11) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE `block` (
   `usr_id` varchar(10) NOT NULL,
   PRIMARY KEY  (`block_id`),
   UNIQUE KEY `block_name` (`block_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 CREATE TABLE `content` (
   `id` int(11) NOT NULL auto_increment,
@@ -117,8 +117,8 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
-INSERT INTO `block` VALUES   ( '1', 'Share', 'upload/default.png', '0', '0',  date_format(now(),'%Y%m%d%H%i%s'),  date_format(now(),'%Y%m%d%H%i%s'), '1');
-INSERT INTO `block` VALUES   ( '2', 'News', 'upload/default.png', '0', '0',  date_format(now(),'%Y%m%d%H%i%s'),  date_format(now(),'%Y%m%d%H%i%s'), '1');
+INSERT INTO `block` VALUES   ( '0', 'º€÷µ ’≤ÿ', 'upload/default.png', '0', '0',  date_format(now(),'%Y%m%d%H%i%s'),  date_format(now(),'%Y%m%d%H%i%s'), '1');
+
 INSERT INTO `siteparas` VALUES   ( 'logo', 'logo.png');
 INSERT INTO `siteparas` VALUES   ( 'name', 'BitWord');
 INSERT INTO `siteparas` VALUES   ( 'keywords', 'BitWord');

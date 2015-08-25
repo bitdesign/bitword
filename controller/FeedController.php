@@ -13,7 +13,16 @@ class FeedController extends Controller{
         parent::__construct();
         $this->feed = new Feed();
     }
+    
+    function listnews(){
 
+		include "config/site.php";
+		require_once('model/Feed.php');
+		$feed = new Feed();
+		$feeds = $feed->getFeeds();
+		require("view/admin/feednews.php");
+	}
+	
     function listPage(){
         $arrayList = $this->feed->getFeeds();
         require('view/admin/feed.php');

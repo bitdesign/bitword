@@ -31,6 +31,8 @@ class BlockController extends Controller{
 		if(empty($_POST["block_id"])){
 			$_POST["input_tm"] = $curTm;
 		}
+		
+		$_POST['block_id'] = $this->block->getNextID();
 		$_POST['usr_id'] = $_SESSION['loginuser']['usr_id'];
 		
 		$this->block->save();

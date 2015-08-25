@@ -74,7 +74,9 @@
                 <a href="content!listPage"><i class="fa fa-fw fa-list"></i> <?=$tcontents?></a>
             </li>
 
-
+            <li>
+				<a href="feed!listnews"><i class="fa fa-fw fa-rss"></i> <?=$feed_news?></a>
+			</li>
             <li>
                 <a href="block!listPage"><i class="fa fa-fw fa-th-large"></i> <?=$tblock?></a>
             </li>
@@ -84,13 +86,14 @@
 				<a href="setting!settingPage"><i class="fa fa-fw fa-wrench"></i> <?=$tsetting?></a>
 			</li>
 			
-			
-			
 			<li>
 				<a href="admin!data"><i class="fa fa-fw fa-database"></i> <?=$tdatamng?></a>
 			</li>
+			<li>
+				<a href="feed!listPage"><i class="fa fa-fw fa-rss"></i> <?=$feed_list?></a>
+			</li>
 			
-
+			
         </ul>
     </div>
     <!-- /.navbar-collapse -->

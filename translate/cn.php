@@ -127,3 +127,11 @@ $server_ip = "服务器IP";
 $domain_name = "域名";
 
 $stat_info = "统计信息";
+$new_feed = "新增频道";
+
+$channel_title = "频道名称";
+$channel_url = "频道地址";
+$channel_list = "频道列表";
+
+$feed_list = "频道管理";
+$feed_news = "频道资讯";

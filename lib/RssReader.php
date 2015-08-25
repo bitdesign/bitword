@@ -12,7 +12,7 @@ class RssReader{
         
         require_once "lib/LogUtil.php";
         $logger = LogUtil::getLogger();
-        if ( $hasCache ){ // ÓĞ»º´æÇÒ»º´æµÄÊ±¼ä²»³¬¹ı6Ğ¡Ê±ÔòÊ¹ÓÃ»º´æ
+        if ( $hasCache ){ // æœ‰ç¼“å­˜ä¸”ç¼“å­˜çš„æ—¶é—´ä¸è¶…è¿‡6å°æ—¶åˆ™ä½¿ç”¨ç¼“å­˜
 
             $t1 = filemtime($fullUrl);
             $t2 = time();
@@ -36,7 +36,7 @@ class RssReader{
 
         $timeout=array(
         'http'=>array(
-        'timeout'=>20 //³¬Ê±Ê±¼ä£¬µ¥Î»ÎªÃë
+        'timeout'=>20 //è¶…æ—¶æ—¶é—´ï¼Œå•ä½ä¸ºç§’
         )
         );
 
@@ -66,7 +66,8 @@ class RssReader{
         if( $char_set == 'UTF-8'){
 
         }else{
-            $buff = mb_convert_encoding($buff,'utf-8','gb2312');
+           // $buff = mb_convert_encoding($buff,'utf-8','gb2312'); --ä¸æ”¯æŒç”Ÿåƒ»å­—ï¼Œéœ€æ”¹æˆGBK
+            $buff = mb_convert_encoding($buff,'utf-8','GBK');
             $buff = str_replace($from_str,$to_str,$buff);
         }
 

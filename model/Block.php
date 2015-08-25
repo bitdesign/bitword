@@ -9,7 +9,18 @@ class Block extends BaseModel{
 		$this->db->del("content","block_id in (".formatString($id).")");
 		$this->db->del("block","block_id in (".formatString($id).")");
 	}
-
+    
+    
+    public function getNextID() {
+		$sql = "select max(block_id)+1 next_id from  block";
+		$result = mysql_query($sql);
+		if (!$result) {
+			return 0;
+		}
+		$record = mysql_fetch_array($result,MYSQL_ASSOC);
+		return $record["next_id"];
+	}
+	
 	public function save() {
 		
 		$arr = array (

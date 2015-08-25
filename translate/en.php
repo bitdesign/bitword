@@ -126,3 +126,12 @@ $server_ip = "Server IP";
 $domain_name = "Domain Name";
 
 $stat_info = "Dashboard";
+
+$new_feed = "Add Feed";
+
+$channel_title = "Channel Title";
+$channel_url = "Channel URL";
+$channel_list = "Feed list";
+
+$feed_list = "Feed List";
+$feed_news = "Feed News";
