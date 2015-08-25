@@ -2,10 +2,6 @@
 <html>
     <head>
         <? include "_include.php"; ?>
-        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://cdn.bootcss.com/jquery.form/3.51/jquery.form.min.js"></script>
-        <script src="http://cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-        <script type="text/javascript" src="<?=$webroot.'/'.$tpl_root.'/js/defualt.js' ?>"></script>
 
         <script type="text/javascript" src="<?=$webroot.'/'.$tpl_root.'/js/base64.js' ?>"></script>
         <script type="text/javascript" src="<?=$webroot.'/'.$tpl_root.'/js/bit.js' ?>"></script>
