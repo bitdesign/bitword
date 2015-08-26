@@ -10,7 +10,7 @@
 				$.post("Login!login",$('#myform').formSerialize(),
 				function(data) {
 					if(data == "true"){
-						location="content!listPage";
+						location="admin!dashboard"";
 					}else{
 						alert(data);
 					}
